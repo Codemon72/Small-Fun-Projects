@@ -91,6 +91,7 @@ main {
 
 .overview {
   background-color: #fff;
+  opacity: .9;
   padding: 2rem;
   position: absolute;
   left: 0;
