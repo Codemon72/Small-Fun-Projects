@@ -25,7 +25,7 @@ const showMovies = (moviesArray) => {
     ${poster_path 
     ? `<img src="${IMG_PATH + poster_path}" alt="{title}" />`
     : `<div class="image-replacer">
-        <div>Schade,</div>
+        <div>Schade 🤷‍♂️</div>
         <div>kein Poster in der Datenbank.</div>
        </div>`}
     <div class="movie-info">
