@@ -22,7 +22,10 @@ const showMovies = (moviesArray) => {
     movieEl.classList.add("movie");
 
     movieEl.innerHTML = `
-    <img src="${IMG_PATH + poster_path}" alt="${title}">
+    ${poster_path 
+    ? `<img src="${IMG_PATH + poster_path}" alt="{title}" />`
+    : `<div class="image-replacer">
+        <div>Sorry,</div><div>no poster in the database.</div></div>`}
     <div class="movie-info">
       <h3>${title}</h3>
       <span class="${getClassByRate(vote_average)}">${vote_average}</span>
