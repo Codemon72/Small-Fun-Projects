@@ -25,14 +25,20 @@ const showMovies = (moviesArray) => {
     ${poster_path 
     ? `<img src="${IMG_PATH + poster_path}" alt="{title}" />`
     : `<div class="image-replacer">
-        <div>Sorry,</div><div>no poster in the database.</div></div>`}
+        <div>Schade,</div>
+        <div>kein Poster in der Datenbank.</div>
+       </div>`}
     <div class="movie-info">
       <h3>${title}</h3>
       <span class="${getClassByRate(vote_average)}">${vote_average}</span>
     </div>
     <div class="overview">
-      <h3>Overview</h3>
-      ${overview}
+      <h3>Kurzübersicht</h3>
+      ${overview
+      ? `${overview}`
+      : `<span>Huch 🤭</span>
+      <div> noch keine Kurzübersicht in der Datenbank</div>`
+    }
     </div>
     `
     main.appendChild(movieEl)
@@ -48,7 +54,7 @@ const getClassByRate = (vote) => {
 }
 
 // Get initial movies
-getMovies(API_URL);
+getMovies(API_URL + langCode);
 
 async function getMovies(url) {
   const res = await fetch(url);
@@ -64,7 +70,7 @@ form.addEventListener("submit", (e) => {
   const searchTerm = search.value;
 
   if (searchTerm && searchTerm !== "") {
-    getMovies(SEARCH_API + searchTerm);
+    getMovies(SEARCH_API + searchTerm + langCode);
 
     search.value = "";
   } else {
