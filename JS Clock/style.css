@@ -25,15 +25,18 @@ body {
   border: 4px solid black;
   position: relative;
 }
+
 .clock .number {
   --rotation: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   font-size: 1.5rem;
+  line-height: 45px;
   text-align: center;
   transform: rotate(var(--rotation));
 }
+
 .clock .number1 { --rotation: 30deg; }
 .clock .number2 { --rotation: 60deg; }
 .clock .number3 { --rotation: 90deg; }
@@ -58,6 +61,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+
 .clock .hand {
   --rotation: 0;
   position: absolute;
@@ -84,10 +88,6 @@ body {
 }
 .clock .hand.second {
   width: 4px;
-  height: 45%;
+  height: 42%;
   background-color: #f00;
-}
-
-a {
-  color: #fff;
 }
