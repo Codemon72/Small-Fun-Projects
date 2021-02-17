@@ -6,7 +6,7 @@ slightly translucent analog clock ticking away before an ever-sliding beautiful 
 
 - https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/
 - other animations: https://1stwebdesigner.com/17-cool-pure-css-animations/
-- 
+- pure CSS animations (flying birds 😍): https://www.mockplus.com/blog/post/css-animation-examples
 
 ### Transperency + Blur Effect:
 
