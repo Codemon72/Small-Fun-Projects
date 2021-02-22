@@ -17,6 +17,7 @@ backdrop-filter: blur(10px);
 ```
 
 ### Clock:
+https://www.youtube.com/watch?v=QhBJ8fLZvco very nice clock design/ shadows
 https://www.youtube.com/watch?v=94TKO4eKfIA
 https://www.youtube.com/watch?v=uxMFmHIkbBc
 https://www.youtube.com/watch?v=weZFfrjF-k4
