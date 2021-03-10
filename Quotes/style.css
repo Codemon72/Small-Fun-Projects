@@ -35,21 +35,23 @@ h3 {
   border-bottom-left-radius: 1rem;
 }
 .btn {
-  padding: 0.5em 1em;
+  padding: 0.6em 1.1em;
   margin-top: 1rem;
   border: none;
   outline: none;
-  color: #222;
-  background-color: #e3e3e3;
+  color: #000;
+  background-color: #ddd;
+  border-top: 4px solid #e3e3e3;
+  border-bottom: 4px solid #e3e3e3;
   letter-spacing: 1px;
-  /* border-top: 2px solid red; */
-  /* border-bottom: 2px solid red; */
-  /* border-radius: 6px; */
+  border-radius: 1px;
   /* box-shadow: 5px 5px 20px -5px; */
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
 .btn:hover {
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
   /* make a strip of color drift up from bottom to top */
   /* box-shadow: 5px 5px 20px -10px; */
 }
