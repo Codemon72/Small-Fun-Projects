@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   margin: 0;
   line-height: 1.5;
   /* --- */
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   /* center everything */
   display: flex;
   flex-direction: row;
@@ -20,7 +20,9 @@ body {
   background-color: #000;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
 
@@ -36,21 +38,27 @@ h1, h2, h3 {
   padding: 0.5em 1em;
   margin-top: 1rem;
   border: none;
+  outline: none;
+  color: #222;
+  background-color: #e3e3e3;
+  letter-spacing: 1px;
   /* border-top: 2px solid red; */
   /* border-bottom: 2px solid red; */
-  border-radius: 6px;
-  box-shadow: 5px 5px 20px -5px;
-  transition: .2s all ease-in-out;
+  /* border-radius: 6px; */
+  /* box-shadow: 5px 5px 20px -5px; */
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
 }
 .btn:hover {
-  cursor: pointer;
-  box-shadow: 5px 5px 20px -10px;
+  /* make a strip of color drift up from bottom to top */
+  /* box-shadow: 5px 5px 20px -10px; */
 }
 
 .container {
   width: 300px;
   min-height: 300px;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0004);
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0004);
   position: relative;
   overflow: hidden;
 }
