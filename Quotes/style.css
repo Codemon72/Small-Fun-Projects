@@ -45,7 +45,6 @@ h3 {
   border-bottom: 4px solid #e3e3e3;
   letter-spacing: 1px;
   border-radius: 1px;
-  /* box-shadow: 5px 5px 20px -5px; */
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
@@ -53,7 +52,6 @@ h3 {
   border-top: 4px solid red;
   border-bottom: 4px solid red;
   /* make a strip of color drift up from bottom to top */
-  /* box-shadow: 5px 5px 20px -10px; */
 }
 
 .container {
