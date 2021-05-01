@@ -1,7 +1,8 @@
 ### How the Magic Happens:
 
 - input fields + labels (or spans) inside div container
-- position them (container: realtive) (children: absolute), width + height, padding so they all occupy the same space
+- position them (container: relative) (children: absolute)
+- width, height, padding so they all occupy the same space
 - z-index and background: transparent so the label is behind the input field
 - let the label transform upwards when input receives focus. 
   label: transform-origin: 0, 0;
