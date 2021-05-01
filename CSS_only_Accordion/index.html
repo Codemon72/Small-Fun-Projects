@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS only Accordion</title>
+</head>
+
+<body>
+
+  <h1>CSS only Accordion</h1>
+  
+  <div class="container">
+    <input class="toggle" type="checkbox" checked>
+    <span class="question">No Javascript?</span>
+    <div class="answer">Not a line. 😊</div>
+  </div>
+  <div class="container">
+    <input class="toggle" type="checkbox" checked>
+    <span class="question">How does it work?</span>
+    <div class="answer">
+      By laying an invisible checkbox over the whole question field. <br>
+      The visibility of the answer depends on the box being checked or not. <br> 
+      It's a simple sibling selector: 
+      <pre>
+
+  input.toggle:checked ~ .answer {
+    display: none;
+  }
+      </pre>
+    </div>
+  </div>
+  <div class="container">
+    <input class="toggle" type="checkbox" checked>
+    <span class="question">Can I see the code?</span>
+    <div class="answer">
+      Sure. <br>
+      There is a bare bones sample on <a href="https://codepen.io/Codemon72/pen/OJVBjyL" target="_blank" rel="noopener noreferrer">Codepen</a>.
+    </div>
+  </div>
+
+</body>
+
+</html>
