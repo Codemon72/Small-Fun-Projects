@@ -2,7 +2,7 @@
   grid-area: List;
   padding: 1.5rem 2.5rem;
   font-size: 1.5rem;
-  color: lightgray;
+  color: gray;
 }
 .one-two-three-dots::after {
   content: '\2026';
