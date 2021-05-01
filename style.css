@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --black: #111;
+  --white: hsl(0, 0%, 99%);
+  --link-general: #5BA1C1;
+  --highlighted-link: #003C57;
+  --check_color: #003C57;
+  --check_a_color: #8FCBE6;
+  --check_b_light: #01627F;
+  /* box-shadow: */
+  --bs-dark: 1px 2px 15px 0 rgb(0, 0, 0, 8%);
+  --bs-light: 0 0 15px 0 rgba(0, 0, 0, 4%);
+}
+body {
+  margin: 0;
+  color: var(--black);
+  background-color: var(--white);
+  padding: 1rem;
+}
+@media only screen and (min-width: 480px) {
+  body {
+    margin: 2rem;
+  }
+}
+a {
+  color: var(--link-general);
+} 
+a:focus,
+a:hover {
+  color: var(--highlighted-link);
+}
