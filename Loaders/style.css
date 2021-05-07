@@ -1,3 +1,7 @@
+.box {
+
+}
+
 .one-two-three-dots {
   grid-area: List;
   padding: 1.5rem 2.5rem;
@@ -17,4 +21,27 @@
   to {
     width: 1.25em;
   }
+}
+
+
+.box.kinetic {
+  width: 200px;
+  height: 200px;
+  background-color: #2c3e50;
+}
+.kinetic {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+.kinetic::after, .kinetic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #fff;
+
 }

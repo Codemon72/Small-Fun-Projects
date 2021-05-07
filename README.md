@@ -1,4 +1,4 @@
-## Small Fun Projects
+# Small Fun Projects
 
 I use this repo to try out small fun projects and keep samples of code I liked.
 
@@ -18,11 +18,12 @@ Props to [Tommy Kelly](https://www.youtube.com/channel/UCBeE2qKffzEzRoWns6RZ8UA/
 Based on a project from Brad Traversy's course on Udemy: "50 projects in 50 days".
 Pictures from Unsplash.
 
+## CSS only
+Pure CSS. 🤓
 
 ### [Animated Placeholders](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/index.html)
 
 Input fields with placeholders that become labels when you click inside. 
-Pure CSS. 🤓
 Scratched this together from a couple of sources.
 My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md)
 
