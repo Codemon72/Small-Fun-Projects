@@ -27,9 +27,8 @@ Input fields with placeholders that become labels when you click inside.
 Scratched this together from a couple of sources.
 My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md)
 
-### [Basic Animated CSS Loader](https://codemon72.github.io/Small-Fun-Projects/Loaders/index.html)
+### [Basic Animated CSS Loaders](https://codemon72.github.io/Small-Fun-Projects/Loaders/index.html)
 
-Well. It *is* basic.
 Animation with @keyframes.
       
 ### [CSS Only Accordion](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion/index.html)
