@@ -1,11 +1,35 @@
 * {
   box-sizing: border-box;
 }
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 300px 300px;
+}
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.box {
+  align-self: center;
+  justify-self: center;
+}
+
+/* 1-2-3 Dots */
 .one-two-three-dots {
   grid-area: List;
   padding: 1.5rem 2.5rem;
   font-size: 1.5rem;
   color: gray;
+  width: 300px;
 }
 .one-two-three-dots::after {
   content: '\2026';
@@ -22,7 +46,7 @@
   }
 }
 
-
+/* Rotating Triangles */
 .box.box-kinetic {
   background-color: #2c3e50;
   display: flex;
@@ -79,3 +103,46 @@
     transform: rotate(450deg);
   }
 }
+
+/* Bouncing Balls */
+.bouncer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100px;
+  height: 20px;
+}
+.bouncer div {
+  width: 20px;
+  height: 20px;
+  background-color: #2c3e50;
+  border-radius: 50%;
+  animation: bouncer .5s cubic-bezier(.19, .57, .3, .98) infinite alternate;
+}
+.bouncer div:nth-child(2) {
+  animation-delay: .1s;
+  opacity: .8;
+}
+.bouncer div:nth-child(3) {
+  animation-delay: .2s;
+  opacity: .6;
+}
+.bouncer div:nth-child(4) {
+  animation-delay: .3s;
+  opacity: .4;
+}
+@keyframes bouncer {
+  from { transform: translateY(0);}
+  to { transform: translateY(-100px);}
+}
+
+
+
+/* * { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue } */
