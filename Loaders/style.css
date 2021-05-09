@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-.box {
-
-}
-
 .one-two-three-dots {
   grid-area: List;
   padding: 1.5rem 2.5rem;
