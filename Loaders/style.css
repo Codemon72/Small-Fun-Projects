@@ -149,8 +149,8 @@
   overflow: hidden;
   height: 250px;
   width: 250px;
-  padding: 3rem;
-  transform: rotate(33deg) skewX(-22deg);
+  padding: 2.4rem;
+  transform: rotate(42deg) skewY(-27deg);
 }
 .circle {
   box-sizing: content-box;
