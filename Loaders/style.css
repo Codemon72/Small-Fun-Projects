@@ -141,9 +141,32 @@
   to { transform: translateY(-100px);}
 }
 
+/* Rotating Circles */
+.box-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+  padding: 3rem;
+  transform: rotate(33deg) skewX(-22deg);
+}
+.circle {
+  box-sizing: content-box;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: solid 8px #2c3e50;
+  border-top: 8px solid #9FADBD;
+  border-radius: 50%;
+  animation: rotate 5s ease-in-out infinite;
+}
+@keyframes rotate {
+  100% {transform: rotate(360deg)}
+}
 
-
-/* * { outline: 2px dotted red }
+/* 
+* { outline: 2px dotted red }
 * * { outline: 2px dotted green }
 * * * { outline: 2px dotted orange }
 * * * * { outline: 2px dotted blue }
