@@ -29,7 +29,7 @@ My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projec
 
 ### [Basic Animated CSS Loaders](https://codemon72.github.io/Small-Fun-Projects/Loaders/index.html)
 
-Animation with @keyframes.
+Animations with @keyframes.
       
 ### [CSS Only Accordion](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion/index.html)
 
