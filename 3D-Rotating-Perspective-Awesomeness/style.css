@@ -7,6 +7,7 @@
 body {
   background-color: #000;
   min-height: 100vh;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +60,7 @@ body {
 
 @-webkit-keyframes ballBounce {
   0%, 100% {
-    bottom: 1em;
+    bottom: 0.5em;
   }
   50% {
     bottom: 3em;
@@ -70,7 +71,7 @@ body {
 
 @keyframes ballBounce {
   0%, 100% {
-    bottom: 1em;
+    bottom: 0.5em;
   }
   50% {
     bottom: 3em;
@@ -89,7 +90,7 @@ body {
 }
 
 @-webkit-keyframes ballShadow {
-  0%, 100% {
+  0%, 8%, 93.5%, 100% {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
@@ -104,7 +105,7 @@ body {
 }
 
 @keyframes ballShadow {
-  0%, 100% {
+  0%, 8%, 93.5%, 100% {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
@@ -124,8 +125,28 @@ body {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: absolute;
-  top: -1em;
+  bottom: -1em;
   left: -1em;
+  -webkit-animation: cubeHeight var(--bounceSpeed) infinite linear;
+          animation: cubeHeight var(--bounceSpeed) infinite linear;
+}
+
+@-webkit-keyframes cubeHeight {
+  0%, 100% {
+    height: 1.5em;
+  }
+  8%, 93.5% {
+    height: 2em;
+  }
+}
+
+@keyframes cubeHeight {
+  0%, 100% {
+    height: 1.5em;
+  }
+  8%, 93.5% {
+    height: 2em;
+  }
 }
 
 .cube .left, .cube .right, .cube .front, .cube .back {

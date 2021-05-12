@@ -7,6 +7,7 @@
 body {
   background-color: #000;
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +47,7 @@ body {
     sceneRotate var(--rotateSpeed) infinite linear reverse;
 
     @keyframes ballBounce {
-      0%, 100% { bottom: 1em; }
+      0%, 100% { bottom: 0.5em; }
       50% { bottom: 3em; animation-timing-function: ease-in; }
     }
 }
@@ -59,7 +60,7 @@ body {
   animation: ballShadow var(--bounceSpeed) infinite ease-out;
 
   @keyframes ballShadow {
-    0%, 100% { transform: scale(1); opacity: 1; }
+    0%, 8%, 93.5%, 100% { transform: scale(1); opacity: 1; }
     50% { transform: scale(2); opacity: 0.5; animation-timing-function: ease-in; }
   }
 }
@@ -69,8 +70,14 @@ body {
   height: 2em;
   transform-style: preserve-3d;
   position: absolute;
-  top: -1em;
+  bottom: -1em;
   left: -1em;
+  animation: cubeHeight var(--bounceSpeed) infinite linear;
+
+  @keyframes cubeHeight {
+    0%, 100% { height: 1.5em; }
+    8%, 93.5% { height: 2em; }
+  }
   
   .left, .right, .front, .back {
     position: absolute;
