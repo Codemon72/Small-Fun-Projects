@@ -1,5 +1,6 @@
 :root {
   --boxColor: #0ff7;
+  --rotateSpeed: 30s
 }
 
 body {
@@ -18,6 +19,11 @@ body {
 .scene {
   position: relative;
   transform-style: preserve-3d;
+  animation: sceneRotate var(--rotateSpeed) infinite linear;
+
+  @keyframes sceneRotate {
+    to { transform: rotateY(360deg); }
+  }
 }
 
 .ball {
@@ -25,7 +31,7 @@ body {
   height: 1em;
   border-radius: 50%;
   background-color: lightblue;
-
+  
   position: absolute;
   left: -.5em;
   bottom: 1em;
@@ -34,6 +40,7 @@ body {
     lightblue,
     #000
   );
+  animation: sceneRotate var(--rotateSpeed) infinite linear reverse;
 }
 
 .ballShadow {
@@ -46,6 +53,7 @@ body {
 .cube {
   width: 2em;
   height: 2em;
+  transform-style: preserve-3d;
   position: absolute;
   top: -1em;
   left: -1em;
