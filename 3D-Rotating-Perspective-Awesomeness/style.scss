@@ -36,6 +36,13 @@ body {
   );
 }
 
+.ballShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#0007, #0000 50%);
+}
+
 .cube {
   width: 2em;
   height: 2em;
