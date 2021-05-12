@@ -36,3 +36,8 @@ Animations with @keyframes.
 When building the website for [Hamburg Coding School](https://hamburgcodingschool.com) my boss kept hassling me to find a *CSS only* solution, so to not slow down the site. 
 Just starting out back then I thought it couldn't be done. 
 Thank you for the push, Teresa! &#129303;
+
+### [3D Magic with CSS](https://codemon72.github.io/Small-Fun-Projects/3D-Rotating-Perspective-Awesomeness/index.html)
+
+Just coded along with a great tutorial.
+All honors for this one go to [Amit Sheen](https://amitsh.com/) and [Kevin Powell](https://www.kevinpowell.co/). 🙏
