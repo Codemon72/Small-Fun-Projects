@@ -24,7 +24,9 @@ Pure CSS. 🤓
 ### [Animated Placeholders](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/index.html)
 
 Input fields with placeholders that become labels when you click inside. 
+
 Scratched this together from a couple of sources.
+
 My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md)
 
 ### [Basic Animated CSS Loaders](https://codemon72.github.io/Small-Fun-Projects/Loaders/index.html)
@@ -34,10 +36,13 @@ Animations with @keyframes.
 ### [CSS Only Accordion](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion/index.html)
 
 When building the website for [Hamburg Coding School](https://hamburgcodingschool.com) my boss kept hassling me to find a *CSS only* solution, so to not slow down the site. 
+
 Just starting out back then I thought it couldn't be done. 
+
 Thank you for the push, Teresa! &#129303;
 
 ### [3D Magic with CSS](https://codemon72.github.io/Small-Fun-Projects/3D-Rotating-Perspective-Awesomeness/index.html)
 
 Just coded along with a great tutorial.
+
 All honors for this one go to [Amit Sheen](https://amitsh.com/) and [Kevin Powell](https://www.kevinpowell.co/). 🙏
