@@ -26,6 +26,7 @@
 .box {
   align-self: center;
   justify-self: center;
+  /* box-shadow: 4px 8px 16px rgba(0,0,0,0.1); */
 }
 
 /* 1-2-3 Dots */
@@ -165,8 +166,125 @@
   100% {transform: rotate(360deg)}
 }
 
-/* 
-* { outline: 2px dotted red }
+/* Sqare to Spiral Animation */
+
+.box.square2star {
+  background-color: #2c3e50;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border: 1px solid #fff;
+}
+.square2star div:nth-child(1) {
+  animation: rotate1 5s ease-in-out infinite;
+}
+@keyframes rotate1 {
+  50% {
+    transform: rotate(180deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(2) {
+  animation: rotate2 5s ease-in-out infinite;
+}
+@keyframes rotate2 {
+  50% {
+    transform: rotate(160deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(3) {
+  animation: rotate3 5s ease-in-out infinite;
+}
+@keyframes rotate3 {
+  50% {
+    transform: rotate(120deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(4) {
+  animation: rotate4 5s ease-in-out infinite;
+}
+@keyframes rotate4 {
+  50% {
+    transform: rotate(100deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(5) {
+  animation: rotate5 5s ease-in-out infinite;
+}
+@keyframes rotate5 {
+  50% {
+    transform: rotate(80deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(6) {
+  animation: rotate6 5s ease-in-out infinite;
+}
+@keyframes rotate6 {
+  50% {
+    transform: rotate(60deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(7) {
+  animation: rotate7 5s ease-in-out infinite;
+}
+@keyframes rotate7 {
+  50% {
+    transform: rotate(40deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(8) {
+  animation: rotate8 5s ease-in-out infinite;
+}
+@keyframes rotate8 {
+  50% {
+    transform: rotate(40deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(9) {
+  animation: rotate9 5s ease-in-out infinite;
+}
+@keyframes rotate9 {
+  50% {
+    transform: rotate(20deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(10) {
+  animation: rotate10 5s ease-in-out infinite;
+}
+@keyframes rotate10 {
+  50% {
+    transform: rotate(0deg);
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+
+/* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
 * * * { outline: 2px dotted orange }
 * * * * { outline: 2px dotted blue }
