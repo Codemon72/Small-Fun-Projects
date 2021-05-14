@@ -142,6 +142,202 @@
   to { transform: translateY(-100px);}
 }
 
+/* Sqare to Spiral Animation */
+.box.square2star {
+  background-color: #2c3e50;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  border: 1px solid #fff;
+}
+.square2star div:nth-child(1) {
+  animation: rotate1 5s ease-in-out infinite;
+}
+@keyframes rotate1 {
+  50% {
+    transform: rotate(0deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(2) {
+  animation: rotate2 5s ease-in-out infinite;
+}
+@keyframes rotate2 {
+  50% {
+    transform: rotate(10deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(3) {
+  animation: rotate3 5s ease-in-out infinite;
+}
+@keyframes rotate3 {
+  50% {
+    transform: rotate(20deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(4) {
+  animation: rotate4 5s ease-in-out infinite;
+}
+@keyframes rotate4 {
+  50% {
+    transform: rotate(30deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(5) {
+  animation: rotate5 5s ease-in-out infinite;
+}
+@keyframes rotate5 {
+  50% {
+    transform: rotate(40deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(6) {
+  animation: rotate6 5s ease-in-out infinite;
+}
+@keyframes rotate6 {
+  50% {
+    transform: rotate(50deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(7) {
+  animation: rotate7 5s ease-in-out infinite;
+}
+@keyframes rotate7 {
+  50% {
+    transform: rotate(60deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(8) {
+  animation: rotate8 5s ease-in-out infinite;
+}
+@keyframes rotate8 {
+  50% {
+    transform: rotate(70deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(9) {
+  animation: rotate9 5s ease-in-out infinite;
+}
+@keyframes rotate9 {
+  50% {
+    transform: rotate(80deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(10) {
+  animation: rotate10 5s ease-in-out infinite;
+}
+@keyframes rotate10 {
+  50% {
+    transform: rotate(90deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(11) {
+  animation: rotate11 5s ease-in-out infinite;
+}
+@keyframes rotate11 {
+  50% {
+    transform: rotate(100deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(12) {
+  animation: rotate12 5s ease-in-out infinite;
+}
+@keyframes rotate12 {
+  50% {
+    transform: rotate(110deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(13) {
+  animation: rotate13 5s ease-in-out infinite;
+}
+@keyframes rotate13 {
+  50% {
+    transform: rotate(120deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(14) {
+  animation: rotate14 5s ease-in-out infinite;
+}
+@keyframes rotate14 {
+  50% {
+    transform: rotate(130deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(15) {
+  animation: rotate15 5s ease-in-out infinite;
+}
+@keyframes rotate15 {
+  50% {
+    transform: rotate(140deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(16) {
+  animation: rotate16 5s ease-in-out infinite;
+}
+@keyframes rotate16 {
+  50% {
+    transform: rotate(150deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(17) {
+  animation: rotate17 5s ease-in-out infinite;
+}
+@keyframes rotate17 {
+  50% {
+    transform: rotate(160deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.square2star div:nth-child(18) {
+  animation: rotate18 5s ease-in-out infinite;
+}
+@keyframes rotate18 {
+  50% {
+    transform: rotate(170deg);
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
 /* Rotating Circles */
 .box-circles {
   display: flex;
@@ -166,122 +362,7 @@
   100% {transform: rotate(360deg)}
 }
 
-/* Sqare to Spiral Animation */
 
-.box.square2star {
-  background-color: #2c3e50;
-  height: 250px;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.square {
-  position: absolute;
-  height: 120px;
-  width: 120px;
-  border: 1px solid #fff;
-}
-.square2star div:nth-child(1) {
-  animation: rotate1 5s ease-in-out infinite;
-}
-@keyframes rotate1 {
-  50% {
-    transform: rotate(180deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(2) {
-  animation: rotate2 5s ease-in-out infinite;
-}
-@keyframes rotate2 {
-  50% {
-    transform: rotate(160deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(3) {
-  animation: rotate3 5s ease-in-out infinite;
-}
-@keyframes rotate3 {
-  50% {
-    transform: rotate(120deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(4) {
-  animation: rotate4 5s ease-in-out infinite;
-}
-@keyframes rotate4 {
-  50% {
-    transform: rotate(100deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(5) {
-  animation: rotate5 5s ease-in-out infinite;
-}
-@keyframes rotate5 {
-  50% {
-    transform: rotate(80deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(6) {
-  animation: rotate6 5s ease-in-out infinite;
-}
-@keyframes rotate6 {
-  50% {
-    transform: rotate(60deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(7) {
-  animation: rotate7 5s ease-in-out infinite;
-}
-@keyframes rotate7 {
-  50% {
-    transform: rotate(40deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(8) {
-  animation: rotate8 5s ease-in-out infinite;
-}
-@keyframes rotate8 {
-  50% {
-    transform: rotate(40deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(9) {
-  animation: rotate9 5s ease-in-out infinite;
-}
-@keyframes rotate9 {
-  50% {
-    transform: rotate(20deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
-.square2star div:nth-child(10) {
-  animation: rotate10 5s ease-in-out infinite;
-}
-@keyframes rotate10 {
-  50% {
-    transform: rotate(0deg);
-    height: 60px;
-    border-radius: 50%;
-  }
-}
 
 
 /* * { outline: 2px dotted red }
