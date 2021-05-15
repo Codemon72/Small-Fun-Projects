@@ -1,5 +1,5 @@
 const API_URL =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0018f2ed5cf91a94365b4ff9629631be&page=1";
+  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0018f2ed5cf91a94365b4ff9629631be&page=1&include_video=true";
 
 const langCode = "&language=en"
 
@@ -25,8 +25,8 @@ const showMovies = (moviesArray) => {
     ${poster_path 
     ? `<img src="${IMG_PATH + poster_path}" alt="{title}" />`
     : `<div class="image-replacer">
-        <div>Schade 🤷‍♂️</div>
-        <div>kein Poster in der Datenbank.</div>
+        <div>Pity! 🤷‍♂️</div>
+        <div>no poster in the database.</div>
        </div>`}
     <div class="movie-info">
       <h3>${title}</h3>
