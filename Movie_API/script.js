@@ -1,7 +1,7 @@
 const API_URL =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=0018f2ed5cf91a94365b4ff9629631be&page=1";
 
-const langCode = "&language=de"
+const langCode = "&language=en"
 
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 
@@ -33,11 +33,11 @@ const showMovies = (moviesArray) => {
       <span class="${getClassByRate(vote_average)}">${vote_average}</span>
     </div>
     <div class="overview">
-      <h3>Kurzübersicht</h3>
+      <h3>Overview</h3>
       ${overview
       ? `${overview}`
-      : `<span>Huch 🤭</span>
-      <div> noch keine Kurzübersicht in der Datenbank</div>`
+      : `<span>Oops 🤭</span>
+      <div> no overview in the Database yet</div>`
     }
     </div>
     `
