@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
 } */
+
+
 :root {
   font-size: 18px;
+  --colorGreen: #00a448;
+  --colorBlue: #0d468f;
+  --colorRed: #e73233; 
+  --colorYellow: #f69f21;
 }
 
 .grid {
@@ -49,4 +55,11 @@ button {
 /* HTML Only Accordion */
 .accordion ~ p {
   margin: auto 0 1.5rem;
+}
+
+/* Conic Gradient */
+.conicGradient {
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(#0d468f, #f69f21);
 }
