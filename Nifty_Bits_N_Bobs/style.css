@@ -11,6 +11,9 @@
   --colorRed: #e73233; 
   --colorYellow: #f69f21;
 }
+body {
+  padding: 2rem;
+}
 
 .grid {
   display: grid;
@@ -41,7 +44,8 @@
   justify-content: flex-start;
   align-items: center;
   width: 300px;
-  min-height: 250px;
+  min-height: 300px;
+  border-radius: 6px;
   box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
 }
 h4 {
@@ -51,9 +55,7 @@ button {
   padding: 1rem 2rem;
   font-size: 16px;
 }
-
-/* HTML Only Accordion */
-.accordion ~ p {
+.seeCodeHere {
   margin: auto 0 1.5rem;
 }
 
@@ -62,4 +64,11 @@ button {
   width: 150px;
   height: 150px;
   background: conic-gradient(#0d468f, #f69f21);
+}
+
+.conicGradientPieChart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#00a448 .2turn, #0d468f .2turn .55turn, #e73233 .55turn .75turn, #f69f21 .75turn);
 }
