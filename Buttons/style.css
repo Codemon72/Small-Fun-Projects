@@ -46,10 +46,6 @@ button {
   font-size: 16px;
 }
 
-.btn--tooltip {
-  
-}
-
 [data-tooltip]:hover::before,
 [data-tooltip]:hover::after {
   content: attr(data-tooltip);

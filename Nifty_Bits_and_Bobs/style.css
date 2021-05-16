@@ -66,9 +66,11 @@ button {
   background: conic-gradient(#0d468f, #f69f21);
 }
 
+/* Pie Chart with Conic Gradient */
 .conicGradientPieChart {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  /* After color: one value where the color should start and one where it should end. At beginning and end one value is enough - beginning (0turn) and end (1turn) are assumed. */
   background: conic-gradient(#00a448 .2turn, #0d468f .2turn .55turn, #e73233 .55turn .75turn, #f69f21 .75turn);
 }
