@@ -1,20 +1,21 @@
 const pace = () => setInterval(setClock, 1000)
 
-const hourHand = document.querySelector('[data-hour-hand]')
-const minuteHand = document.querySelector('[data-minute-hand]')
-const secondHand = document.querySelector('[data-second-hand]')
+const hourHand = document.querySelector('#hour-hand')
+const minuteHand = document.querySelector('#minute-hand')
+const secondHand = document.querySelector('#second-hand')
 
 const setClock = () => {
-  const currentDate = new Date();
-  const secondsRatio = currentDate.getSeconds() / 60
-  const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60
-  const hoursRatio = (minutesRatio +currentDate.getHours()) / 12
-  setRotation(secondHand, secondsRatio)
-  setRotation(minuteHand, minutesRatio)
-  setRotation(hourHand, hoursRatio)
+  const Time = new Date();
+  const secondDeg = Time.getSeconds() / 60;
+  const minuteDeg = (secondDeg + Time.getMinutes()) / 60;
+  const hourDeg = (minuteDeg + Time.getHours()) / 12;
+
+  handsDegs(hourHand, hourDeg);
+  handsDegs(minuteHand, minuteDeg);
+  handsDegs(secondHand, secondDeg);
 }
 
-const setRotation = (element, rotationRatio) => {
+const handsDegs = (element, rotationRatio) => {
   element.style.setProperty('--rotation', rotationRatio * 360)
 }
 

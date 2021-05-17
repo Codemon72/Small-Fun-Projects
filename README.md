@@ -9,7 +9,7 @@ Some of them are live here:
 Using the API from [The Movie Database](https://api.themoviedb.org), following a tutorial from Brad Traversy.
 
 
-### [Analog Clock](https://codemon72.github.io/Small-Fun-Projects/JS_Clock_2.0/index.html)
+### [Analog Clock](https://codemon72.github.io/Small-Fun-Projects/JS_Clock/index.html)
 I build this clock because I liked the styling so much.
 Props to [Tommy Kelly](https://www.youtube.com/channel/UCBeE2qKffzEzRoWns6RZ8UA/videos) for that.
 
