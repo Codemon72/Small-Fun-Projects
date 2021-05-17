@@ -59,6 +59,25 @@ button {
   margin: auto 0 1.5rem;
 }
 
+/* Typing Effect */
+.typingEffect {
+  margin-top: 3rem;
+  font-size: 30px;
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 13ch;
+  border-right: 3px solid;
+  animation: typingEffect 2s steps(13), blinkingCursor .5s step-end infinite alternate;
+}
+
+@keyframes typingEffect {
+  from {width: 0;}
+}
+@keyframes blinkingCursor {
+  50% {border-color: transparent;}
+}
+
 /* Conic Gradient */
 .conicGradient {
   width: 150px;
