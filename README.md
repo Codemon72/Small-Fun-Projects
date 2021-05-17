@@ -49,5 +49,6 @@ All honors for this one go to [Amit Sheen](https://amitsh.com/) and [Kevin Powel
 
 Mostly tiny things I come across that I find interesting. For example:
 - HTML only Accordion
+- Typing Effect
 - Conic Gradient
 - Pie Chart with Conic Gradient
