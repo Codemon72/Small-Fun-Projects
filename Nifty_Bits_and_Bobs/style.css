@@ -97,9 +97,13 @@ button {
 
 /* Resize */
 .box.resize {
+  /* magic here */
   resize: both;
-  overflow: auto;
+  /* overflow must be 'auto', 'hidden' or 'scroll' but NOT 'visible' */
+  overflow: hidden;
+  background-color: #fff;
   padding: 1.5rem;
+  height: 300px;
   box-sizing: border-box;
   text-align: center;
 }
