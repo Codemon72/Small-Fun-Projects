@@ -83,7 +83,10 @@ button {
 .conicGradient {
   width: 150px;
   height: 150px;
-  background: conic-gradient(#0d468f, #f69f21);
+  background: conic-gradient(#f69f21, #00a448);
+}
+.conicGradient:hover {
+  background: conic-gradient(#f69f21, #e73233, #0d468f, #00a448);
 }
 
 /* Pie Chart with Conic Gradient */
@@ -93,6 +96,9 @@ button {
   border-radius: 50%;
   /* After color: one value where the color should start and one where it should end. At beginning and end one value is enough - beginning (0turn) and end (1turn) are assumed. */
   background: conic-gradient(#00a448 .2turn, #0d468f .2turn .55turn, #e73233 .55turn .75turn, #f69f21 .75turn);
+}
+.conicGradientPieChart:hover {
+  background: conic-gradient(#00a448 .35turn, #0d468f .35turn .5turn, #e73233 .5turn .65turn, #f69f21 .65turn);
 }
 
 /* Resize */
