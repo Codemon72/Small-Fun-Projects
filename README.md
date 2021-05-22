@@ -52,3 +52,8 @@ Mostly tiny things I come across that I find interesting. For example:
 - Typing Effect
 - Conic Gradient
 - Pie Chart with Conic Gradient
+- 'resize' property
+- 'filter: hue-rotate()'
+
+### [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
+
