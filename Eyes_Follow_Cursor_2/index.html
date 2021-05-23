@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+    <text y=%22.9em%22 font-size=%2290%22>👀</text>
+  </svg>">
+
+  <title>Eyes Follow Cursor</title>
+</head>
+
+<body>
+
+  <div class="box">
+
+    <div class="eye">
+    </div>
+
+    <div class="eye">
+    </div>
+
+  </div>
+
+
+  <script>
+    const balls = document.getElementsByClassName('ball');
+    document.onmousemove = () => {
+      let x = event.clientX * 100 / window.innerWidth + '%';
+      let y = event.clientY * 100 / window.innerHeight + '%';
+
+      for (let i = 0; i < 2; i++) {
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+        balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
+      }
+      console.log(x, y)
+    }
+  </script>
+</body>
+
+</html>
