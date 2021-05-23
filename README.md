@@ -55,5 +55,7 @@ Mostly tiny things I come across that I find interesting. For example:
 - 'resize' property
 - 'filter: hue-rotate()'
 
-### [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
+### Trying Out: Eyes follow Cursor
+- [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
+- [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
 
