@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 :root {
   font-size: 18px;
+  --colorGreen: #00a448;
+  --colorBlue: #0d468f;
+  --colorRed: #e73233; 
+  --colorYellow: #f69f21;
 }
 
 .grid {
@@ -41,9 +47,11 @@
 h4 {
   margin: 2rem auto 1rem;
 }
-button {
-  padding: 1rem 2rem;
-  font-size: 16px;
+button, a {
+  padding: 1em 2em;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: .5rem;
 }
 .bg--dark {
   background-color: #2c3e50;
@@ -60,8 +68,9 @@ button {
 .btn--expanding {
   position: relative;
   display: inline-flex;
-  padding: 10px 30px;
-  background-color: #9fadbd;
+  border-radius: 6px;
+  color: #fff;
+  background-color: var(--colorGreen);
   text-decoration: none;
   letter-spacing: 1px;
   overflow: hidden;
@@ -79,7 +88,7 @@ button {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #2196f3;
+  background-color: var(--colorBlue);
   transition: width 0.5s, height 0.5s;
 
 }
