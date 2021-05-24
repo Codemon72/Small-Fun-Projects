@@ -59,10 +59,10 @@ button, a {
 }
 
 /* Hover adds text to Button */
-[data-tooltip]:hover::before,
+/* [data-tooltip]:hover::before,
 [data-tooltip]:hover::after {
   content: attr(data-tooltip);
-}
+} */
 
 /* Hover effect expanding from Point of touch */
 .btn--expanding {
