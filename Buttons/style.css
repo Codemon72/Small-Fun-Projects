@@ -45,8 +45,45 @@ button {
   padding: 1rem 2rem;
   font-size: 16px;
 }
+.bg--dark {
+  background-color: #2c3e50;
+  color: #fff;
+}
 
+/* Hover adds text to Button */
 [data-tooltip]:hover::before,
 [data-tooltip]:hover::after {
   content: attr(data-tooltip);
+}
+
+/* Hover effect expanding from Point of touch */
+.btn--expanding {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  background-color: #9fadbd;
+  text-decoration: none;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+.btn--expanding span {
+  position: relative;
+  z-index: 1;
+}
+.btn--expanding::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #2196f3;
+  transition: width 0.5s, height 0.5s;
+
+}
+.btn--expanding:hover::before {
+  width: 300px;
+  height: 300px;
 }

@@ -16,6 +16,21 @@
       <h4>Add To Button Text (CSS)</h4>
       <button class="btn--tooltip " data-tooltip="🚫">Hover me!</button>
     </div>
+
+    <div class="box bg--dark">
+      <h4>Effect Expanding (CSS + JS)</h4>
+      <a href="#" class="btn--expanding"><span>Button</span></a>
+    </div>
+    <script>
+      const btnExpanding = document.querySelector('.btn--expanding');
+      btnExpanding.onmousemove = function(e){
+        const x = e.pageX - btnExpanding.offsetLeft;
+        const y = e.pageY - btnExpanding.offsetTop;
+
+        btnExpanding.style.setProperty('--x', x + 'px');
+        btnExpanding.style.setProperty('--y', y + 'px');
+      }
+    </script>
   </div>
   
 </body>
