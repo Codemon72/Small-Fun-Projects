@@ -55,6 +55,9 @@ Mostly tiny things I come across that I find interesting. For example:
 - 'resize' property
 - 'filter: hue-rotate()'
 
+### [Image Comparison Slider (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Image_Comparison_Slider)
+2 images positioned above each other, using the 'resize: horizontal;' property on the top one.
+
 ### Trying Out: Eyes follow Cursor
 - [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
 - [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
