@@ -62,3 +62,5 @@ Mostly tiny things I come across that I find interesting. For example:
 - [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
 - [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
 
+### [Clip Path Animation](https://codemon72.github.io/Small-Fun-Projects/Clip_Path_Animation)
+Might come in handy for info boxes or the like.
