@@ -58,9 +58,9 @@ Mostly tiny things I come across that I find interesting. For example:
 ### [Image Comparison Slider (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Image_Comparison_Slider)
 2 images positioned above each other, using the 'resize: horizontal;' property on the top one.
 
-### Trying Out: Eyes follow Cursor
-- [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
-- [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
-
 ### [Clip Path Animation](https://codemon72.github.io/Small-Fun-Projects/Clip_Path_Animation)
 Might come in handy for info boxes or the like.
+
+### Experimenting: Eyes follow Cursor
+- [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
+- [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
