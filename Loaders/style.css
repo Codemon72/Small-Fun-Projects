@@ -435,6 +435,26 @@
   80%, 100% { transform: scale(0); }
 }
 
+/* Newton's Cradle */
+.cube {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.cube-1 {
+  background-color: #00a448;
+}
+.cube-2 {
+  background-color: #0d468f;
+}
+.cube-3 {
+  background-color: #e73233;
+}
+.cube-4 {
+  background-color: #f69f21;
+}
+
+
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
 * * * { outline: 2px dotted orange }
