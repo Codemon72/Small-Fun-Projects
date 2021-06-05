@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  --colorGreen: #00a448;
+  --colorBlue: #0d468f;
+  --colorRed: #e73233; 
+  --colorYellow: #f69f21;
 }
 .grid {
   display: grid;
@@ -423,10 +427,10 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #9FADBD;
-  box-shadow: 0 0 10px #9FADBD,
-              0 0 20px #9FADBD,
-              0 0 40px #9FADBD;              ;
+  background-color: #f69f21;
+  box-shadow: 0 0 10px #f69f21,
+              0 0 20px #f69f21,
+              0 0 40px #f69f21;              ;
   animation: animate 2s linear infinite;
   animation-delay: calc(0.1s * var(--i));
 }
@@ -435,23 +439,34 @@
   80%, 100% { transform: scale(0); }
 }
 
-/* Newton's Cradle */
+/* Newton's Cradle of Boxes*/
 .cube {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 .cube-1 {
-  background-color: #00a448;
+  background-color: #8cc271;
+  animation: ping-left 1s infinite;
 }
 .cube-2 {
-  background-color: #0d468f;
+  background-color: #69beeb;
 }
 .cube-3 {
-  background-color: #e73233;
+  background-color: #f5aa39;
 }
 .cube-4 {
-  background-color: #f69f21;
+  background-color: #e9643b;
+  animation: ping-right 1s infinite .5s;
+}
+
+@keyframes ping-left {
+  40% { transform: translateX(-30px); }
+  50% { transform: translateX(0); }
+}
+@keyframes ping-right {
+  40% { transform: translateX(30px); }
+  50% { transform: translateX(0); }
 }
 
 
