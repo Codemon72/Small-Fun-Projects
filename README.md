@@ -31,7 +31,7 @@ My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projec
 
 Animations with @keyframes.
       
-### [CSS Only Accordion](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion)
+### [Accordion (CSS Only)](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion)
 
 When building the website for [Hamburg Coding School](https://hamburgcodingschool.com) my boss kept hassling me to find a *CSS only* solution, so to not slow down the site. 
 
