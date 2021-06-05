@@ -27,7 +27,7 @@ Scratched this together from a couple of sources.
 
 My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md)
 
-### [Basic Loading Animations (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Loaders)
+### [Loading Animations (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Loaders)
 
 Animations with @keyframes.
       
