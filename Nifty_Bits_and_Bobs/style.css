@@ -141,20 +141,47 @@ button {
   100% { filter: hue-rotate(360deg); }
 }
 
-/* Flip Animation */
+/* Flip Vertical */
 .box.flipAnimation {
   justify-content: center;
+  perspective: 500px;
 }
-.box.flipAnimation .text {
+.box.flipAnimation .textX,
+.box.flipAnimation .textY {
   font-size: 30px;
   font-weight: 900;
   cursor: pointer;
 }
-.box.flipAnimation .rectangle {
+.box.flipAnimation .rectangleX,
+.box.flipAnimation .rectangleY {
   width: 200px;
   height: 80px;
-  background-color: #f69f21;
+  
   margin-top: 40px;
+  cursor: pointer;
+}
+.box.flipAnimation .rectangleX {
+  background-color: #f69f21;
+}
+.box.flipAnimation .rectangleY {
+  background-color: #00a448;
+}
+.box.flipAnimation .textX:hover,
+.box.flipAnimation .rectangleX:hover {
+  animation: flipVertical 1s linear;
+}
+.box.flipAnimation .textY:hover,
+.box.flipAnimation .rectangleY:hover {
+  animation: flipHorizontal 2s linear;
+}
+
+@keyframes flipVertical {
+  50% { transform: rotateX(180deg);}
+  to { transform: rotateX(360deg);}
+}
+@keyframes flipHorizontal {
+  50% { transform: rotateY(180deg);}
+  to { transform: rotateY(360deg);}
 }
 
 /* * { outline: 2px dotted red }
