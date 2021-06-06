@@ -54,6 +54,7 @@ Mostly tiny things I come across that I find interesting. For example:
 - Pie Chart with Conic Gradient
 - 'resize' property
 - 'filter: hue-rotate()'
+- flip animations
 
 ### [Image Comparison Slider (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Image_Comparison_Slider)
 2 images positioned above each other, using the 'resize: horizontal;' property on the top one.
