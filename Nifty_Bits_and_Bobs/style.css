@@ -184,6 +184,23 @@ button {
   to { transform: rotateY(360deg);}
 }
 
+/* Image Behind Text */
+.box.image-text {
+  justify-content: center;
+}
+.box.image-text h1 {
+  font-size: 78px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
 * * * { outline: 2px dotted orange }
