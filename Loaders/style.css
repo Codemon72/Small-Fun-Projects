@@ -477,10 +477,11 @@
 .box.square div {
   position: absolute;
   top: 0;
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   background-color: var(--colorBlue);
-  animation: flippinSquares 4s infinite ease-in-out;
+  animation: flippinSquares 2s infinite ease-in-out;
+  transform-origin: bottom right;
 }
 
 @keyframes flippinSquares {
@@ -494,22 +495,30 @@
 /* Flippin Squares */
 .box.squares {
   position: relative;
+  perspective: 200px;
 }
 
 .box.squares div {
   position: absolute;
-  top: 0;
+  top: 75px;
+  left: 75px;
   height: 50px;
   width: 50px;
-  background-color: coral;
-  animation: flippin2Squares 2s infinite ease-in-out;
+  background-color: var(--colorBlue);
+  animation: flippin2Squares 4s linear infinite;
+  transform-origin: bottom right;
+}
+
+.box.squares div:nth-child(2) {
+  animation-delay: -2s;
+  opacity: 0.9;
 }
 
 @keyframes flippin2Squares {
   0% { transform: rotateX(0) rotateY(0);}
-  25% { transform: rotateX(0) rotateY(180deg);}
-  50% { transform: rotateX(180deg) rotateY(180deg);}
-  75% { transform: rotateX(180deg) rotateY(0);}
+  25% { transform: rotateX(0) rotateY(180deg); background-color: var(--colorGreen);}
+  50% { transform: rotateX(180deg) rotateY(180deg); background-color: var(--colorRed);}
+  75% { transform: rotateX(180deg) rotateY(0); background-color: var(--colorYellow);}
   100% { transform: rotateX(0) rotateY(0);}
 }
 
