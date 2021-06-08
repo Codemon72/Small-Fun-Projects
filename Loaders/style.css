@@ -469,6 +469,50 @@
   50% { transform: translateX(0); }
 }
 
+/* Flippin Square */
+.box.square {
+  position: relative;
+}
+
+.box.square div {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 150px;
+  background-color: var(--colorBlue);
+  animation: flippinSquares 4s infinite ease-in-out;
+}
+
+@keyframes flippinSquares {
+  0% { transform: rotateX(0) rotateY(0);}
+  25% { transform: rotateX(0) rotateY(180deg); background-color: var(--colorGreen);}
+  50% { transform: rotateX(180deg) rotateY(180deg); background-color: var(--colorRed);}
+  75% { transform: rotateX(180deg) rotateY(0); background-color: var(--colorYellow);}
+  100% { transform: rotateX(0) rotateY(0);}
+}
+
+/* Flippin Squares */
+.box.squares {
+  position: relative;
+}
+
+.box.squares div {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: coral;
+  animation: flippin2Squares 2s infinite ease-in-out;
+}
+
+@keyframes flippin2Squares {
+  0% { transform: rotateX(0) rotateY(0);}
+  25% { transform: rotateX(0) rotateY(180deg);}
+  50% { transform: rotateX(180deg) rotateY(180deg);}
+  75% { transform: rotateX(180deg) rotateY(0);}
+  100% { transform: rotateX(0) rotateY(0);}
+}
+
 
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
