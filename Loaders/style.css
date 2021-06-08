@@ -469,28 +469,6 @@
   50% { transform: translateX(0); }
 }
 
-/* Flippin Square */
-.box.square {
-  position: relative;
-}
-
-.box.square div {
-  position: absolute;
-  top: 0;
-  height: 50px;
-  width: 50px;
-  background-color: var(--colorBlue);
-  animation: flippinSquares 2s infinite ease-in-out;
-  transform-origin: bottom right;
-}
-
-@keyframes flippinSquares {
-  0% { transform: rotateX(0) rotateY(0);}
-  25% { transform: rotateX(0) rotateY(180deg); background-color: var(--colorGreen);}
-  50% { transform: rotateX(180deg) rotateY(180deg); background-color: var(--colorRed);}
-  75% { transform: rotateX(180deg) rotateY(0); background-color: var(--colorYellow);}
-  100% { transform: rotateX(0) rotateY(0);}
-}
 
 /* Flippin Squares */
 .box.squares {
