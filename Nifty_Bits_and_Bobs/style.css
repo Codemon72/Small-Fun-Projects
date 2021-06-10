@@ -217,6 +217,7 @@ button {
   display: flex;
   flex-direction: row;
   margin: auto 0;
+  height: 63px;
 }
 .text__expanding span {
   text-transform: uppercase;
@@ -224,6 +225,7 @@ button {
   font-size: 55px;
   letter-spacing: 5px;
   transition: .5s linear;
+  margin: auto 0;
 }
 .text__expanding .hidden {
   max-width: 0;
