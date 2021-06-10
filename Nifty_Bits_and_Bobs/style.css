@@ -204,11 +204,39 @@ button {
   background-size: cover;
   -webkit-text-fill-color:transparent;
   -webkit-background-clip:text;
+  transition: .5s linear;
 }
 .box.image-text h1:hover {
   background: url(images/flowers.jpeg) 50% 50%;
   -webkit-text-fill-color:transparent;
   -webkit-background-clip:text;
+}
+
+/* Expanding Text */
+.text__expanding {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+}
+.text__expanding span {
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 55px;
+  letter-spacing: 5px;
+  transition: .5s linear;
+}
+.text__expanding .hidden {
+  max-width: 0;
+  opacity: 0;
+  transition: .5s linear;
+}
+.text__expanding:hover .hidden {
+  max-width: 1em;
+  opacity: 1;
+}
+.text__expanding:hover span {
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
 /* * { outline: 2px dotted red }
