@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Buttons</title>
 </head>
+
 <body>
   <div class="grid">
     <!-- <div class="box">
@@ -23,7 +25,7 @@
     </div>
     <script>
       const btnExpanding = document.querySelector('.btn--expanding');
-      btnExpanding.onmousemove = function(e){
+      btnExpanding.onmousemove = function (e) {
         const x = e.pageX - btnExpanding.offsetLeft;
         const y = e.pageY - btnExpanding.offsetTop;
 
@@ -31,7 +33,16 @@
         btnExpanding.style.setProperty('--y', y + 'px');
       }
     </script>
+
+    <!-- Sliding Border Gap -->
+    <div class="box sliding-gap">
+      <h4>Sliding Border Gap</h4>
+      <button class="btn">Hover</button>
+    </div>
+
   </div>
-  
+
+
 </body>
+
 </html>
