@@ -42,6 +42,7 @@
   align-items: center;
   width: 300px;
   height: 200px;
+  border-radius: 6px;
   box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
 }
 h4 {
@@ -105,7 +106,35 @@ button, a {
 .sliding-gap .btn {
   width: 200px;
   height: 60px;
+  padding: unset;
   border: 4px solid;
   background: none;
   color: #3498db;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+.sliding-gap .btn::before,
+.sliding-gap .btn::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background-color: #353b48;
+  transform: skew(50deg);
+  transition: .4s linear;
+}
+.sliding-gap .btn::before {
+  top: -4px;
+  left: 10%;
+}
+.sliding-gap:hover .btn::before {
+  left: 80%;
+}
+.sliding-gap .btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+.sliding-gap:hover .btn::after {
+  right: 80%;
 }
