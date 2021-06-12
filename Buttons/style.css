@@ -128,14 +128,14 @@ button, a {
   top: -4px;
   left: 10%;
 }
-.sliding-gap:hover .btn::before {
+.sliding-gap .btn:hover::before {
   left: 80%;
 }
 .sliding-gap .btn::after {
   bottom: -4px;
   right: 10%;
 }
-.sliding-gap:hover .btn::after {
+.sliding-gap .btn:hover::after {
   right: 80%;
 }
 
