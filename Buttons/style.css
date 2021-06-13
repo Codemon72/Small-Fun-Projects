@@ -205,3 +205,21 @@ button, a {
 .share-button a:nth-of-type(4) {
   transition-delay: .4s;
 }
+
+/* In and Out Underline */
+.inAndOutUnderline {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 90%;
+  height: 80px;
+}
+.inAndOutUnderline a {
+  padding: unset;
+  font-size: unset;
+  font-family: unset;
+  margin-top: unset;
+  color: #fff;
+  text-decoration: none;
+}
