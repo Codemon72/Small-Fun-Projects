@@ -241,6 +241,30 @@ button {
   letter-spacing: 2px;
 }
 
+/* Text Change with CSS */
+.textChangeCSS {
+  position: relative;
+}
+.textChangeCSS::after {
+  content: 'Some Text';
+  position: absolute;
+  width: 150px;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid red;
+}
+.textChangeCSS:hover::after {
+  content: 'Some other Text';
+  position: absolute;
+  width: 150px;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid blue;
+}
+
+
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
 * * * { outline: 2px dotted orange }
