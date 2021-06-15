@@ -242,6 +242,13 @@ button {
 }
 
 /* Text Change with CSS */
+a.textChangeCSS {
+  padding: 1em 2em;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+}
 .textChangeCSS {
   position: relative;
 }
@@ -253,15 +260,25 @@ button {
   left: 50%;
   transform: translateX(-50%);
   outline: 1px solid red;
+  text-align: center;
 }
 .textChangeCSS:hover::after {
   content: 'Some other Text';
-  position: absolute;
+  /* position: absolute;
+  width: 150px;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%); */
+  outline: 1px solid blue;
+}
+a.textChangeCSS:focus::after {
+  content: 'And yet some other text';
+  /* position: absolute;
   width: 150px;
   top: 90px;
   left: 50%;
   transform: translateX(-50%);
-  outline: 1px solid blue;
+  outline: 1px solid blue; */
 }
 
 
