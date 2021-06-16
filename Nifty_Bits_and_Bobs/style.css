@@ -244,6 +244,7 @@ button {
 /* Text Change with CSS */
 a.textChangeCSS {
   padding: 1em 2em;
+  margin-top: 3.5rem;
   border: 1px solid black;
   border-radius: 6px;
   text-decoration: none;
@@ -252,6 +253,24 @@ a.textChangeCSS {
 .textChangeCSS {
   position: relative;
 }
+.textChangeCSS::before {
+  content: 'Hover above the button.';
+  position: absolute;
+  width: 150px;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: coral;
+}
+.textChangeCSS:hover::before {
+  content: 'Now click and hold.';
+  color: green;
+}
+.textChangeCSS:focus::before {
+  content: 'Unfocus the button.';
+  color: blue;
+}
 .textChangeCSS::after {
   content: 'Some Text';
   position: absolute;
@@ -259,26 +278,16 @@ a.textChangeCSS {
   top: 90px;
   left: 50%;
   transform: translateX(-50%);
-  outline: 1px solid red;
   text-align: center;
+  color: coral;
 }
 .textChangeCSS:hover::after {
   content: 'Some other Text';
-  /* position: absolute;
-  width: 150px;
-  top: 90px;
-  left: 50%;
-  transform: translateX(-50%); */
-  outline: 1px solid blue;
+  color: green;
 }
 a.textChangeCSS:focus::after {
   content: 'And yet some other text';
-  /* position: absolute;
-  width: 150px;
-  top: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-  outline: 1px solid blue; */
+  color: blue;
 }
 
 
