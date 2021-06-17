@@ -205,6 +205,12 @@ button, a {
 .share-button a:nth-of-type(4) {
   transition-delay: .4s;
 }
+.share-button a i {
+  transition: .2s linear;
+}
+.share-button a:hover i {
+  transform: scale(1.2);
+}
 
 /* In and Out Underline */
 .inAndOutUnderline {
