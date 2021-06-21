@@ -20,8 +20,13 @@ const addTodo = (todo) => {
       todoEl.classList.add('completed')
     }
     todoEl.innerText = todoText;
+
+    todoEl.addEventListener('click', () => {
+      todoEl.classList.toggle('completed')
+    })
+
     todosUL.appendChild(todoEl);
+
     input.value = ''; 
   }
-  console.log(todoText)
 }
