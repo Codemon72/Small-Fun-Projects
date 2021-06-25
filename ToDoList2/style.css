@@ -1,4 +1,48 @@
-h1 {
-  color: red;
-  font-family: Poppins, sans-serif;
+:root {
+  --color-primary: red;
+  --color-bg: linear-gradient(120deg, #e2c35d, #d88771);
+  --font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-image: var(--color-bg);
+  font-family: var(--font-family);
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header, 
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, 
+form button {
+  padding: .5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+}
+
+form button {
+  color: #d88771;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+form button:hover {
+  background-color: #d88771;
+  color: #fff;
 }
