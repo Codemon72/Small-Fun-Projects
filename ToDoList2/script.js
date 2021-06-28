@@ -33,6 +33,7 @@ function addTodo(event) {
   // clear input field
   todoInput.value = "";
 }
+
 function deleteCheck (event) {
   const item = event.target;
   // delete todo
@@ -40,5 +41,10 @@ function deleteCheck (event) {
     const todo = item.parentElement;
     todo.remove();
   }
-  console.log(event.target)
+
+  // mark as completed
+  if (item.classList[0] === "complete-btn") {
+    const todo = item.parentElement;
+    todo.classList.toggle("completed");
+  }
 }
