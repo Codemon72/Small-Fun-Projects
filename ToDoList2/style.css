@@ -64,6 +64,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all .2s ease;
 }
 .todo li {
   flex: 1;
@@ -89,4 +90,8 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: .6;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
