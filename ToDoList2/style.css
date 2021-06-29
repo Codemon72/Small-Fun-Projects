@@ -64,7 +64,7 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all .2s ease;
+  transition: all .3s ease;
 }
 .todo li {
   flex: 1;
@@ -82,6 +82,7 @@ form button:hover {
 .complete-btn {
   background-color: #21c02e;
 }
+/* to be able to click 'through' the icon */
 .fa-trash,
 .fa-check {
   pointer-events: none;
@@ -102,4 +103,32 @@ select {
   appearance: none;
   outline: none;
   border: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #d88771;
+  width: 11rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.select::after {
+  /* Add the arrow back */
+  content: "\25BC";
+  position: absolute;
+  background-color: #d88771;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  /* to be able to click 'through' the icon */
+  pointer-events: none;
+  transition: .3s all ease;
+}
+.select:hover::after {
+  color: #d88771;
+  background-color: #fff;
 }
