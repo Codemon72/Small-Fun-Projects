@@ -53,6 +53,9 @@ All honors for this one go to [Amit Sheen](https://amitsh.com/) and [Kevin Powel
 ### [Clip Path Animation](https://codemon72.github.io/Small-Fun-Projects/Clip_Path_Animation "Clip Path Animation")
 Might come in handy for info boxes or the like.
 
+### [ToDo List with LocalStorage](https://codemon72.github.io/Small-Fun-Projects/ToDoList2 "ToDo List with LocalStorage")
+Followed a tutorial by [Dev Ed](https://www.youtube.com/c/DevEd/videos) to get a better grip on localStorage.
+
 ### Experimenting: Eyes follow Cursor
 - [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
 - [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
