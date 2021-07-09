@@ -12,6 +12,8 @@
   --colorRed: #e73233; 
   --colorYellow: #f69f21;
 }
+/* This is where the magic happens */
+/* (and one more line in .section) */
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
