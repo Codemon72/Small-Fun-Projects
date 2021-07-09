@@ -56,6 +56,9 @@ Might come in handy for info boxes or the like.
 ### [ToDo List with LocalStorage](https://codemon72.github.io/Small-Fun-Projects/ToDoList2 "ToDo List with LocalStorage")
 Followed a tutorial by [Dev Ed](https://www.youtube.com/c/DevEd/videos) to get a better grip on localStorage.
 
+### [Full Page Scroll Snap](https://codemon72.github.io/Small-Fun-Projects/Scroll_Snap)
+Code also in [Codepen](https://codepen.io/Codemon72/pen/bGWejYG).
+
 ### Experimenting: Eyes follow Cursor
 - [Eyes follow Cursor](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor)
 - [Eyes follow Cursor 2](https://codemon72.github.io/Small-Fun-Projects/Eyes_Follow_Cursor_2)
