@@ -56,6 +56,9 @@ Might come in handy for info boxes or the like.
 ### [ToDo List with LocalStorage](https://codemon72.github.io/Small-Fun-Projects/ToDoList2 "ToDo List with LocalStorage")
 Followed a tutorial by [Dev Ed](https://www.youtube.com/c/DevEd/videos) to get a better grip on localStorage.
 
+### [Happy Bubbles - Experimenting with Particles.js](https://codemon72.github.io/Small-Fun-Projects/Happy_Bubbles/ "Happy Bubbles - Experimenting with Particles.js")
+Followed a tutorial by [Online Tutorials](https://www.youtube.com/c/OnlineTutorials4Designers/videos) to learn about [Particles.js](https://vincentgarreau.com/particles.js/).
+
 ### [Full Page Scroll Snap](https://codemon72.github.io/Small-Fun-Projects/Scroll_Snap)
 Code also in [Codepen](https://codepen.io/Codemon72/pen/bGWejYG).
 
