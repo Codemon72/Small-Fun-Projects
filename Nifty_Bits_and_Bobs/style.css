@@ -68,6 +68,21 @@ button {
   line-height: 1.4;
 }
 
+/* Text-Shadow Effect */
+.text-shadow {
+  margin-top: 1.5rem;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: green;
+  font-family: bungee, sans-serif;
+  text-shadow: 
+    0.025em 0.025em 0 yellow,
+    0.05em 0.05em 0 blue,
+    0.075em 0.075em 0 red,
+    0.1em 0.1em 0 black;
+}
+
 /* Typing Effect */
 .typingEffect {
   margin-top: 3rem;
