@@ -14,6 +14,8 @@ Animations with @keyframes.
 
 ### [Fun with Forms](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Forms "Fun with Forms")
 
+- Animated Placeholders
+
 
 ### [Nifty Bits and Bobs](https://codemon72.github.io/Small-Fun-Projects/Nifty_Bits_and_Bobs "Nifty Bits and Bobs")
 
