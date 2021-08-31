@@ -12,13 +12,8 @@ I enjoy interesting hover effects. Still collecting...
 
 Animations with @keyframes.
 
-### [Animated Placeholders (CSS only)](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders "Animated Placeholders")
+### [Fun with Forms](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Forms "Fun with Forms")
 
-Input fields with placeholders that become labels when you click inside. 
-
-Scratched this together from a couple of sources.
-
-My notes on [how the magic happens](https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md)
 
 ### [Nifty Bits and Bobs](https://codemon72.github.io/Small-Fun-Projects/Nifty_Bits_and_Bobs "Nifty Bits and Bobs")
 
