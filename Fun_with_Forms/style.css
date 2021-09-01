@@ -11,8 +11,15 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+header {
+  min-height: 100px;
+}
 footer {
   min-height: 300px;
+}
+section {
+  padding: 3rem;
+  box-shadow: 4px 8px 16px rgba(0,0,0,0.1);
 }
 section ~ section {
   margin-top: 5rem;
