@@ -16,6 +16,7 @@
 <body>
 
   <section>
+    <!-- Animated Placeholders -->
     <h2 class="section-headline">Animated Placeholders</h2>
     <div class="form-group animated-placeholder">
       <input type="text" class="form__input" placeholder=" ">
@@ -33,19 +34,39 @@
   </section>
 
   <section>
-    <h2 class="section-headline">fieldset and legend elements</h2>
+    <!-- fieldset and legend -->
+    <h2 class="section-headline">&lt;fieldset&gt; and &lt;legend&gt;</h2>
     <fieldset>
       <legend>Personalia</legend>
       <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" ><br>
+      <input type="text" id="fname" name="fname"><br>
       <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" ><br><br>
+      <input type="text" id="lname" name="lname"><br><br>
       <input type="submit" value="Submit">
     </fieldset>
     <p class="description">
-      Plain HTML, no CSS involved. Just the fieldset and legend element combo.
+      Plain HTML, no CSS involved. Just the &lt;fieldset&gt; and &lt;legend&gt; element combo.
     </p>
   </section>
+
+    <section>
+      <!-- optgroup -->
+      <h2 class="section-headline">&lt;optgroup&gt;</h2>
+      <select id="framework">
+        <optgroup label="Frontend">
+          <option selected disabled hidden>Choose your Framework</option>
+          <option>Vue</option>
+          <option>React</option>
+          <option>Svelte</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option>Laravel</option>
+          <option>.NET</option>
+          <option>Django</option>
+        </optgroup>
+      </select>
+      <p class="description">Allows for grouping options of the select field.</p>
+    </section>
 
   <!-- <section>
     <h2 class="section-headline">Styling input elements with accent-color</h2>
@@ -59,9 +80,7 @@
     </div>
   </section> -->
 
-  <script>
-
-  </script>
+  <footer></footer>
 </body>
 
 </html>

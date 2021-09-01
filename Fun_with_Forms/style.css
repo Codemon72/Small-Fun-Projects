@@ -11,6 +11,9 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+footer {
+  min-height: 300px;
+}
 section ~ section {
   margin-top: 5rem;
 }

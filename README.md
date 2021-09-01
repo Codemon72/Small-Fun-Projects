@@ -16,6 +16,7 @@ Animations with @keyframes.
 
 - Animated Placeholders
 - fieldset & legend
+- optgroup
 - accent-colors (coming soon)
 
 
