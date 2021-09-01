@@ -15,6 +15,7 @@ Animations with @keyframes.
 ### [Fun with Forms](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Forms "Fun with Forms")
 
 - Animated Placeholders
+- fieldset & legend
 - accent-colors (coming soon)
 
 
