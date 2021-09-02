@@ -19,6 +19,8 @@ Animations with @keyframes.
 - optgroup
 - accent-colors (coming soon)
 
+### [Fun with Images](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Images "Fun with Images")
+- background-blend-mode
 
 ### [Nifty Bits and Bobs](https://codemon72.github.io/Small-Fun-Projects/Nifty_Bits_and_Bobs "Nifty Bits and Bobs")
 
