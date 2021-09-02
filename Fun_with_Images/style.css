@@ -57,6 +57,7 @@ section.bbm .container div {
   height: 300px;
   width: 200px;
 }
+
 .bbm1 {
   background-blend-mode: screen;
 }
@@ -87,6 +88,16 @@ section.bbm .container div {
 .bbm10 {
   background-blend-mode: color;
 }
+.bbm11 {
+  background-blend-mode: darken;
+}
+.bbm12 {
+  background-blend-mode: difference;
+}
+.bbm13 {
+  background-blend-mode: hard-light;
+}
+
 
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
