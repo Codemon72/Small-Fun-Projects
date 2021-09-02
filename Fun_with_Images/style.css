@@ -22,4 +22,33 @@ body {
 h1, h2, h3 {
   line-height: 1.1;
 }
+section.bbm {
+  display: flex;
+  gap: 1rem;
+}
+.bbm0, .bbm1, .bbm2, .bbm3 {
+  background-image: url(images/hiking.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-color: yellowgreen;
+  height: 300px;
+  width: 200px;
+}
+.bbm1 {
+  background-blend-mode: screen;
+}
+.bbm2 {
+  background-blend-mode: multiply;
+}
+.bbm3 {
+  background-blend-mode: overlay;
+}
 
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
