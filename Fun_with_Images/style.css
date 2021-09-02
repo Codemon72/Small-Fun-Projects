@@ -56,8 +56,14 @@ section.bbm .container div {
   background-color: yellowgreen;
   height: 300px;
   width: 200px;
+  position: relative;
 }
-
+section.bbm .container div::after {
+  content: 'text';
+  position: absolute;
+  left: 1rem;
+  top: .5rem;
+}
 .bbm1 {
   background-blend-mode: screen;
 }
