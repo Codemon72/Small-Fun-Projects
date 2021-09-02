@@ -59,50 +59,60 @@ section.bbm .container div {
   position: relative;
 }
 section.bbm .container div::after {
-  content: 'text';
+  content: attr(bbmvalue);
   position: absolute;
   left: 1rem;
   top: .5rem;
 }
-.bbm1 {
-  background-blend-mode: screen;
+.bbm .normal {
+  background-blend-mode: normal;
 }
-.bbm2 {
+.bbm .multiply{
   background-blend-mode: multiply;
 }
-.bbm3 {
+.bbm .screen {
+  background-blend-mode: screen;
+}
+.bbm .overlay {
   background-blend-mode: overlay;
 }
-.bbm4 {
-  background-blend-mode: hue;
-}
-.bbm5 {
-  background-blend-mode: lighten;
-}
-.bbm6 {
-  background-blend-mode: luminosity;
-}
-.bbm7 {
-  background-blend-mode: soft-light;
-}
-.bbm8 {
-  background-blend-mode: color-dodge;
-}
-.bbm9 {
-  background-blend-mode: color-burn;
-}
-.bbm10 {
-  background-blend-mode: color;
-}
-.bbm11 {
+.bbm .darken {
   background-blend-mode: darken;
 }
-.bbm12 {
-  background-blend-mode: difference;
+.bbm .lighten {
+  background-blend-mode: lighten;
 }
-.bbm13 {
+.bbm .color-dodge {
+  background-blend-mode: color-dodge;
+}
+.bbm .color-burn {
+  background-blend-mode: color-burn;
+}
+.bbm .hard-light {
   background-blend-mode: hard-light;
 }
+.bbm .soft-light {
+  background-blend-mode: soft-light;
+}
+.bbm .difference {
+  background-blend-mode: difference;
+}
+.bbm .exclusion {
+  background-blend-mode: exclusion;
+}
+.bbm .hue {
+  background-blend-mode: hue;
+}
+.bbm .saturation {
+  background-blend-mode: saturation;
+}
+.bbm .color {
+  background-blend-mode: color;
+}
+.bbm .luminosity {
+  background-blend-mode: luminosity;
+}
+
 
 
 /* * { outline: 2px dotted red }
