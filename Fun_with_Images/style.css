@@ -50,7 +50,7 @@ section.bbm .container {
   justify-content: space-around;
 }
 section.bbm .container div {
-  background-image: url(images/hiking.jpeg);
+  background-image: url(./images/hiking.jpeg);
   background-position: center;
   background-size: cover;
   background-color: yellowgreen;
