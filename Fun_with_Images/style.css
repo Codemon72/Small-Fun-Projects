@@ -42,6 +42,8 @@ section h2 {
   max-width: 400px;
   line-height: 1.5;
 }
+
+/* background-blend-mode */
 section.bbm .container {
   display: flex;
   gap: 1rem;
@@ -49,7 +51,8 @@ section.bbm .container {
   align-items: center;
   justify-content: space-around;
 }
-section.bbm .container div {
+
+section.bbm.color_and_image .container div {
   background-image: url(./images/hiking.jpeg);
   background-position: center;
   background-size: cover;
@@ -58,6 +61,15 @@ section.bbm .container div {
   width: 200px;
   position: relative;
 }
+section.bbm.c2images .container div {
+  background-image: url(./images/clemens2020avatar-wide.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+}
+
 section.bbm .container div::after {
   content: attr(bbmvalue);
   position: absolute;
