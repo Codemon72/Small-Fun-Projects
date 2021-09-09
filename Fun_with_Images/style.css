@@ -76,6 +76,16 @@ section.bbm._2images .container div {
   position: relative;
   color: white;
 }
+section.bbm._2x1image .container div {
+  background-image: url(./images/turtle.jpeg), url(./images/turtle.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  color: white;
+}
+
 .bbm .normal {
   background-blend-mode: normal;
 }
