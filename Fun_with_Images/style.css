@@ -61,20 +61,20 @@ section.bbm.color_and_image .container div {
   width: 200px;
   position: relative;
 }
-section.bbm.c2images .container div {
-  background-image: url(./images/clemens2020avatar-wide.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  width: 200px;
-  position: relative;
-}
-
 section.bbm .container div::after {
   content: attr(bbmvalue);
   position: absolute;
   left: 1rem;
   top: .5rem;
+}
+section.bbm._2images .container div {
+  background-image: url(./images/small_face.jpeg), url(./images/tree_cut.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  color: white;
 }
 .bbm .normal {
   background-blend-mode: normal;
