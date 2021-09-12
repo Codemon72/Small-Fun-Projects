@@ -36,7 +36,7 @@ Mostly tiny things I come across that I find interesting. For example:
       
 ### [Accordion (CSS Only)](https://codemon72.github.io/Small-Fun-Projects/CSS_only_Accordion "Accordion (CSS only)")
 
-When building the website for [Hamburg Coding School](https://hamburgcodingschool.com) my boss kept hassling me to find a *CSS only* solution, so to not slow down the site. 
+When building the website for [Hamburg Coding School](https://hamburgcodingschool.com) my boss kept pushing me to find a *CSS only* solution, so to not slow down the site. 
 
 Just starting out back then I thought it couldn't be done. 
 
