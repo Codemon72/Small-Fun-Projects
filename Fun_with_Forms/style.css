@@ -26,9 +26,15 @@ section ~ section {
 }
 code {
   font-size: .9rem;
+  background-color: #ddd;
+  padding: 1px;
 }
 .section-headline {
   margin-bottom: 3rem;
+  text-align: center;
+}
+.subtitle {
+  margin: -2rem 0 2rem;
   text-align: center;
 }
 .description {
