@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
     <text y=%22.9em%22 font-size=%2290%22>🤓</text>
-  </svg>">
-  <title>Fun with Forms</title>
+  </svg>"
+    />
+    <title>Fun with Forms</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header></header>
+  <body>
+    <header></header>
 
-  <section>
-    <!-- Animated Placeholders -->
-    <h2 class="section-headline">Animated Placeholders</h2>
-    <div class="form-group animated-placeholder">
-      <input type="text" class="form__input" placeholder=" ">
-      <label class="form__label">Name</label>
-    </div>
+    <section>
+      <!-- Animated Placeholders -->
+      <h2 class="section-headline">Animated Placeholders</h2>
+      <div class="form-group animated-placeholder">
+        <input type="text" class="form__input" placeholder=" " />
+        <label class="form__label">Name</label>
+      </div>
 
-    <div class="form-group animated-placeholder">
-      <input type="email" class="form__input" placeholder=" ">
-      <label class="form__label">Email</label>
-    </div>
-    <p class="description">Input fields with placeholders that become labels when you click inside.<br />
-      Scratched this together from a couple of sources.<br />
-      My notes on <a href="https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md"
-        target="_blank">how the magic happens</a>.</p>
-  </section>
+      <div class="form-group animated-placeholder">
+        <input type="email" class="form__input" placeholder=" " />
+        <label class="form__label">Email</label>
+      </div>
+      <p class="description">
+        Input fields with placeholders that become labels when you click
+        inside.<br />
+        Scratched this together from a couple of sources.<br />
+        My notes on
+        <a
+          href="https://codemon72.github.io/Small-Fun-Projects/Animated_Placeholders/project_notes.md"
+          target="_blank"
+          >how the magic happens</a
+        >.
+      </p>
+    </section>
 
-  <section>
-    <!-- fieldset and legend -->
-    <h2 class="section-headline">&lt;fieldset&gt; and &lt;legend&gt;</h2>
-    <fieldset>
-      <legend>Personalia</legend>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br><br>
-      <input type="submit" value="Submit">
-    </fieldset>
-    <p class="description">
-      Plain HTML, no CSS involved. Just the &lt;fieldset&gt; and &lt;legend&gt; element combo.
-    </p>
-  </section>
+    <section>
+      <!-- fieldset and legend -->
+      <h2 class="section-headline">&lt;fieldset&gt; and &lt;legend&gt;</h2>
+      <fieldset>
+        <legend>Personalia</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <p class="description">
+        Plain HTML, no CSS involved. Just the &lt;fieldset&gt; and
+        &lt;legend&gt; element combo.
+      </p>
+    </section>
 
     <section>
       <!-- optgroup -->
@@ -66,22 +76,51 @@
           <option>Django</option>
         </optgroup>
       </select>
-      <p class="description">Allows for grouping options of the select field.</p>
+      <p class="description">
+        Allows for grouping options of the select field.
+      </p>
     </section>
 
-  <!-- <section>
-    <h2 class="section-headline">Styling input elements with accent-color</h2>
-    <div class="form-group">
-      <input type="checkbox" checked>
-      <label for="">I'm a regular checkbox</label>
-    </div>
-    <div class="form-group">
-      <input class="accent-color" type="checkbox" checked>
-      <label for="">I got accent-color styling</label>
-    </div>
-  </section> -->
+    <section>
+      <!-- accent-color -->
+      <h2 class="section-headline">Styling input elements with accent-color</h2>
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <input type="checkbox" checked />
+        <label for="">I'm a regular checkbox</label>
+        <br />
+        <input class="accent-color" type="checkbox" checked />
+        <label for="">I got accent-color styling</label>
+      </fieldset>
+      <br />
+      <fieldset class="accent-color">
+        <legend>Radio Buttons</legend>
+        <span>This is awesome. I am..</span><br />
+        <input type="radio" id="amazed" name="awe-factor" value="amazed" />
+        <label for="amazed">amazed</label><br />
+        <input type="radio" id="stoked" name="awe-factor" value="stoked" />
+        <label for="stoked" checked="checked">stoked</label><br />
+        <input type="radio" id="flabbergasted" name="awe-factor" value="flabbergasted" />
+        <label for="flabbergasted">flabbergasted</label> <br />
+      </fieldset>
+      <br />
+      <fieldset class="accent-color">
+        <legend>Range Slider</legend>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="72"
+          id="myRange"
+        />
+      </fieldset>
+      <p class="description">
+        Styling of checkboxes and the like used to be a hassle. Coloring at
+        least recently became very easy and light-weight with
+        <code>accent-color</code>.
+      </p>
+    </section>
 
-  <footer></footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

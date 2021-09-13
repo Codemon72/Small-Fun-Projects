@@ -24,13 +24,15 @@ section {
 section ~ section {
   margin-top: 5rem;
 }
+code {
+  font-size: .9rem;
+}
 .section-headline {
   margin-bottom: 3rem;
   text-align: center;
 }
 .description {
   margin-top: 3rem;
-  text-align: center;
   max-width: 400px;
   line-height: 1.5;
 }
@@ -40,14 +42,13 @@ section .form-group {
 .form-group + .form-group {
   margin-top: 3rem;
 }
-
 .form-group {
   position: relative;
-
   width: 250px;
   height: 50px;
 }
 
+/* Animated Placeholder */
 .animated-placeholder .form__label {
   position: absolute;
   top: 0;
@@ -61,7 +62,6 @@ section .form-group {
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
-
 .animated-placeholder .form__input {
   box-shadow: none;
   background-color: rgba(0, 0, 125, 0.03);
@@ -78,19 +78,17 @@ section .form-group {
   font-size: 18px;
   z-index: 2;
 }
-
 .animated-placeholder .form__input::placeholder {
   color: transparent;
 }
-
 .animated-placeholder .form__input:focus + .form__label,
 .animated-placeholder .form__input:not(:placeholder-shown) + .form__label {
   transform: translateX(-12px) translateY(-37px) scale(0.9);
 }
 
 /* accent-color */
-input.accent-color {
-  accent-color: red;
+.accent-color {
+  accent-color: darkorange;
 }
 
 

@@ -17,7 +17,7 @@ Animations with @keyframes.
 - Animated Placeholders
 - fieldset & legend
 - optgroup
-- accent-colors (coming soon)
+- accent-color
 
 ### [Fun with Images](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Images "Fun with Images")
 - background-blend-mode
