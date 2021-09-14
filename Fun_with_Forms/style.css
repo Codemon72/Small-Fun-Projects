@@ -96,6 +96,9 @@ section .form-group {
 .accent-color {
   accent-color: darkorange;
 }
+.accent-color input[value="unimpressed"] {
+  accent-color: initial;
+}
 
 
 /* * { outline: 2px dotted red }
