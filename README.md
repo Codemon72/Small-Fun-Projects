@@ -19,6 +19,10 @@ Animations with @keyframes.
 - optgroup
 - accent-color
 
+### [Mobile Delights](https://codemon72.github.io/Small-Fun-Projects/Mobile_Delights "Mobile Delights")
+
+- the inputmode attribute to display the appropiate keyboard
+
 ### [Fun with Images](https://codemon72.github.io/Small-Fun-Projects/Fun_with_Images "Fun with Images")
 - background-blend-mode
 
