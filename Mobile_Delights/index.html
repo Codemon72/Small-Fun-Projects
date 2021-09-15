@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
     <text y=%22.9em%22 font-size=%2290%22>📲</text>
-  </svg>">
-  <title>Mobile Delights</title>
+  </svg>"
+    />
+    <title>Mobile Delights</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header>
-    <h1>UNDER CONSTRUCTION: Mobile Delights</h1>
-    <p>This page only makes sense if you check it out on your mobile.</p>
-  </header>
+  <body>
+    <header>
+      <h1>UNDER CONSTRUCTION: Mobile Delights</h1>
+      <h2>This page only makes sense if you check it out on your mobile.</h2>
+      <br /><br />
+    </header>
 
-  <section>
-    <!-- inputmode -->
-    <h2 class="section-headline">display appropriate keyboard for input fields</h2>
-    <div class="form-group">
-      <input type="text" class="form__input" placeholder=" ">
-      <label class="form__label">Name</label>
-    </div>
+    <section class="inputmode">
+      <!-- inputmode -->
+      <h2 class="section-headline">
+        display appropriate keyboard for input type="text"fields
+      </h2>
+      <p class="description">
+        Filling out a form on a mobile device can be a bit of a hassle if the
+        form is not build properly: when typing in your email you want a
+        keyboard with letters, '@' and '.', but you want numbers when typing in
+        your phone number. <br />
+        It is easy to build with <code>inputmode</code>. CSS-Tricks has a great
+        article about it:
+        <a href="https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/"
+          target="_blank" rel="noopener noreferrer">Everything you ever wanted to know about inputmode</a>.
+      </p>
+      <p>Test it on your mobile:</p>
 
-    <div class="form-group">
-      <input type="email" class="form__input" placeholder=" ">
-      <label class="form__label">Email</label>
-    </div>
+      <div class="inputmode-showcase">
+        <br>
+        <code>inputmode=text</code> <small><em>(default)</em></small>
+        <br>
+        <input type="text" inputmode="text">
+        <hr>
+        <br><code>inputmode=decimal</code>
+        <br>
+        <input type="text"inputmode="decimal">
+        <hr>
+        <br><code>inputmode=email</code>
+        <br>
+        <input type="text"inputmode="email">
+        <hr>
+        <br><code>inputmode=none</code>
+        <br>
+        <input type="text"inputmode="none">
+        <hr>
+        <br><code>inputmode=numeric</code>
+        <br>
+        <input type="text"inputmode="numeric">
+        <hr>
+        <br><code>inputmode=search</code>
+        <br>
+        <input type="text"inputmode="search">
+        <hr>
+        <br><code>inputmode=tel</code>
+        <br>
+        <input type="text"inputmode="tel">
+        <hr>
+        <br><code>inputmode=url</code>
+        <br>
+        <input type="text"inputmode="url">
+        </div>
 
-    <div class="form-group">
-      <input type="number" class="form__input" placeholder=" ">
-      <label class="form__label">Phone</label>
-    </div>
-    <p class="description">Filling out a form on a mobile device can be a bit of a hassle if the form is not build properly: when typing in your email you want a keyboard with letters, '@' and '.', but you want numbers when typing in your phone number. <br>
-    It is easy to build with <code>inputmode</code>.
-    CSS-Tricks has a great article about it: <a href="https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/" target="_blank" rel="noopener noreferrer">Everything you ever wanted to know about inputmode</a>.</p>
+    </section>
 
-  </section>
-
-
-  <footer></footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

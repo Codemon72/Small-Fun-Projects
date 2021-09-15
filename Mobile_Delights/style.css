@@ -25,7 +25,7 @@ section ~ section {
   margin-top: 5rem;
 }
 .section-headline {
-  margin-bottom: 3rem;
+  margin: -0.5rem 0 3rem;
   text-align: center;
 }
 .description {
@@ -45,7 +45,10 @@ section .form-group {
   height: 50px;
 }
 
-
+/* inputmode */
+section.inputmode .description {
+  margin-top: -1rem;
+}
 
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
