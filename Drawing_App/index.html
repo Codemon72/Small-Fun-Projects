@@ -25,22 +25,26 @@
     </p>
     <div id="pen-tools" class="pen-tools">
       <div id="drawing-colors" class="drawing-colors">
-        <div class="color-circle active" data-color="pink" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="black" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="green" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="blue" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="yellow" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="orange" onclick="selectColor(this)"></div>
-        <div class="color-circle" data-color="grey" onclick="selectColor(this)"></div>
+        <div class="color-circle active" data-color="salmon" style="--color: salmon;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="black" style="--color: black;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="green" style="--color: green;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="blue" style="--color: blue;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="yellow" style="--color: yellow;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="orange" style="--color: orange;" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="grey" style="--color: grey;" onclick="selectColor(this)"></div>
       </div>
       <div id="favContainer">
-        <label for="favColor">Select your favorite color: </label>
+        <label for="favColor">Choose your favorite color: </label>
         <input type="color" name="favColor" id="favColor" value="#ff0000" onchange="favColor(this)"/>
       </div>
       <div id="pen-size" class="pen-size">
-        <label for="pen-size"><i class="fa fa-pencil"></i></label>
+        <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
         <input type="range" name="pen-size" id="pen-size" value="10" step="5" min="5" max="40" onchange="penSizeChange(this)"/>
       </div>
+    </div>
+
+    <div class="board">
+      <canvas width="800px" height="590px"></canvas>
     </div>
 
     <script src="sript.js"></script>
