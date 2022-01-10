@@ -24,50 +24,23 @@
       ><i class="fa fa-refresh refresh-btn"><strong>Clear</strong></i>
     </p>
     <div id="pen-tools" class="pen-tools">
-      <div id="drawing-colors" class="drawing-colors"></div>
-      <div
-        class="color-circle active"
-        data-color="pink"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="black"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="green"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="blue"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="yellow"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="orange"
-        onclick="selectColor(this)"
-      ></div>
-      <div
-        class="color-circle"
-        data-color="grey"
-        onclick="selectColor(this)"
-      ></div>
-    </div>
-    <div id="favContainer">
-      <label for="favColor">Select your favorite color: </label>
-      <input type="color" name="favColor" id="favColor" value="#ff0000" onchange="favColor(this)">
-    </div>
-    <div id="pen-size" class="pen-size">
-      <label for="pen-size"><i class="fa fa-pencil"></i></label>
-      <input type="range" name="pen-size" id="pen-size">
+      <div id="drawing-colors" class="drawing-colors">
+        <div class="color-circle active" data-color="pink" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="black" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="green" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="blue" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="yellow" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="orange" onclick="selectColor(this)"></div>
+        <div class="color-circle" data-color="grey" onclick="selectColor(this)"></div>
+      </div>
+      <div id="favContainer">
+        <label for="favColor">Select your favorite color: </label>
+        <input type="color" name="favColor" id="favColor" value="#ff0000" onchange="favColor(this)"/>
+      </div>
+      <div id="pen-size" class="pen-size">
+        <label for="pen-size"><i class="fa fa-pencil"></i></label>
+        <input type="range" name="pen-size" id="pen-size" value="10" step="5" min="5" max="40" onchange="penSizeChange(this)"/>
+      </div>
     </div>
 
     <script src="sript.js"></script>
