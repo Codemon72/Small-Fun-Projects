@@ -26,7 +26,8 @@ canvas.addEventListener("mousemove", (e)=> {
   draw(e.offsetX, e.offsetY)
 })
 
-c.fillStyle = "black"
+c.fillStyle = "black";
+c.strokeStyle = c.fillStyle;
 
 function draw(x2, y2){
   if(isDrawing){
@@ -34,5 +35,18 @@ function draw(x2, y2){
     c.arc(x2,y2, penSize,0 ,Math.PI * 2);
     c.closePath();
     c.fill()
+    // draw line
+    drawLine(x, y, x2, y2)
   }
+  x = x2;
+  y = y2;
+}
+
+function drawLine(x1, y1, x2, y2) {
+  c.beginPath();
+  c.moveTo(x1, y1);
+  c.lineTo(x2, y2);
+  c.strokeStyle = "black";
+  c.lineWidth = penSize * 2;
+  c.stroke();
 }
