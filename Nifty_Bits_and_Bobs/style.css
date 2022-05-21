@@ -77,7 +77,7 @@ button {
   font-size: 50px;
   font-weight: 900;
 }
-.simpleGlitch span:hover {
+span.simpleGlitchOnHover:hover {
   animation: glitch 1s infinite;
 } 
 span.simpleGlitch {
