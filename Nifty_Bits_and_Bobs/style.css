@@ -68,6 +68,13 @@ button {
   line-height: 1.4;
 }
 
+/* Simple Glitch */
+.box.simpleGlitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Text-Shadow Effect */
 .text-shadow {
   margin-top: 1.5rem;
