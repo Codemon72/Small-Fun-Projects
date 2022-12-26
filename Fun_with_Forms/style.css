@@ -1,6 +1,4 @@
 * {
-  /* margin: 0; */
-  /* padding: 0; */
   box-sizing: border-box;
 }
 
@@ -55,7 +53,8 @@ section .form-group {
 }
 
 /* Animated Placeholder */
-.animated-placeholder .form__label {
+.animated-placeholder .form__label,
+.animated-placeholder .form__input {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,25 +62,19 @@ section .form-group {
   height: 100%;
   padding: 15px;
   font-size: 18px;
+}
+.animated-placeholder .form__label {
   opacity: 0.6;
   transform-origin: 0 0;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
 .animated-placeholder .form__input {
-  box-shadow: none;
   background-color: rgba(0, 0, 125, 0.03);
   border-style: none none outset none;
   border-color: lightgray;
   border-radius: 0px;
   outline: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  font-size: 18px;
   z-index: 2;
 }
 .animated-placeholder .form__input::placeholder {
