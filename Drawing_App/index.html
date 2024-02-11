@@ -64,11 +64,11 @@
         ></div>
       </div>
       <div id="favContainer">
-        <label for="favColor">Choose your favorite color: </label>
+        <label for="favcolor">Select color: </label>
         <input
           type="color"
-          name="favColor"
-          id="favColor"
+          name="favcolor"
+          id="favcolor"
           value="#ff0000"
           onchange="favColor(this)"
         />
@@ -79,11 +79,11 @@
           type="range"
           name="pen-size"
           id="pen-size"
-          value="10"
-          step="5"
-          min="5"
-          max="40"
-          onchange="penSizeChange(this)"
+          value="3"
+          step="2"
+          min="1"
+          max="35"
+          onchange="penSizeChange(this.value)"
         />
       </div>
     </div>

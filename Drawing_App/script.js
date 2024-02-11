@@ -56,7 +56,6 @@ document.querySelector('.fa-refresh').addEventListener('click', function () {
 })
 
 const selectColor = (elem) => {
-
   removeActiveCircleColor()
 
   c.fillStyle = elem.getAttribute('data-color')
@@ -69,3 +68,18 @@ const removeActiveCircleColor = () => {
   })
 }
 
+function penSizeChange(pensize) {
+  penSize = pensize
+}
+
+const favColor = (elem) => {
+  removeActiveCircleColor()
+  c.fillStyle = elem.value
+}
+
+document
+  .querySelector('a')
+  .addEventListener(
+    'click',
+    (event) => (event.target.href = canvas.toDataURL())
+  )
