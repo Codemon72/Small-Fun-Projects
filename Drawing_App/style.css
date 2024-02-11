@@ -64,8 +64,26 @@ p {
   cursor: pointer;
 }
 
-.color-circle {
-  background-color: var(--color);
+.color-circle:nth-child(1){
+  background-color: black;
+}
+.color-circle:nth-child(2){
+  background-color: green;
+}
+.color-circle:nth-child(3){
+  background-color: blue;
+}
+.color-circle:nth-child(4){
+  background-color: yellow;
+}
+.color-circle:nth-child(5){
+  background-color: orange;
+}
+.color-circle:nth-child(6){
+  background-color: grey;
+}
+.color-circle:nth-child(7){
+  background-color: salmon;
 }
 .active {
   transform: scale(1.3);

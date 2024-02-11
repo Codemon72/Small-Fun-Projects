@@ -54,3 +54,18 @@ function drawLine(x1, y1, x2, y2) {
 document.querySelector('.fa-refresh').addEventListener('click', function () {
   c.clearRect(0, 0, canvas.width, canvas.height)
 })
+
+const selectColor = (elem) => {
+
+  removeActiveCircleColor()
+
+  c.fillStyle = elem.getAttribute('data-color')
+  elem.classList.add('active')
+}
+
+const removeActiveCircleColor = () => {
+  colorCircle.forEach((circle) => {
+    circle.classList.remove('active')
+  })
+}
+
