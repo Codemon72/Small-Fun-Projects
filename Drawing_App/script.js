@@ -49,7 +49,7 @@ function drawLine(x1, y1, x2, y2) {
   c.stroke()
 }
 
-document.querySelector('.fa-refresh').addEventListener('click', function () {
+document.getElementById('refresh').addEventListener('click', function () {
   c.clearRect(0, 0, canvas.width, canvas.height)
 })
 
@@ -76,7 +76,7 @@ const favColor = (elem) => {
 }
 
 document
-  .querySelector('a')
+  .getElementById('download')
   .addEventListener(
     'click',
     (event) => (event.target.href = canvas.toDataURL())

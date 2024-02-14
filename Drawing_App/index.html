@@ -6,88 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
-      <text y=%22.9em%22 font-size=%2290%22>👨‍🎨</text>
-    </svg>">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+      <text y=%22.9em%22 font-size=%2290%22>👨‍🎨</text></svg>"
+    />
 
     <title>Drawing App</title>
   </head>
   <body>
-    <p>
-      Draw by holding down the mouse button and moving it.
-      <a href="" download="my_drawing.png">Download this drawing</a
-      ><i class="fa fa-refresh refresh-btn"><strong>Clear</strong></i>
-    </p>
-    <div id="pen-tools" class="pen-tools">
-      <div id="drawing-colors" class="drawing-colors">
-        <div
-          class="color-circle active"
-          data-color="black"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="green"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="blue"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="yellow"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="orange"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="grey"
-          onclick="selectColor(this)"
-        ></div>
-        <div
-          class="color-circle"
-          data-color="salmon"
-          onclick="selectColor(this)"
-        ></div>
+    <div class="main">
+      <h1>Drawing App</h1>
+      <p>Draw by holding down the mouse button and moving it.</p>
+
+      <div id="download" download="my_drawing.png" class="contains-icon">
+        <img class="icon" src="icons/download.svg" alt="Pen Tool Icon" />
+        <span> Download this drawing</span>
       </div>
-      <div id="favContainer">
-        <label for="favcolor">Select color: </label>
-        <input
-          type="color"
-          name="favcolor"
-          id="favcolor"
-          value="#ff0000"
-          onchange="favColor(this)"
-        />
+      <div id="refresh" class="contains-icon">
+        <img class="icon" src="icons/refresh-cw.svg" alt="Pen Tool Icon" />
+        <span>Clear</span>
       </div>
-      <div id="pen-size" class="pen-size">
-        <label for="pen-size"><i class="fa fa-pencil"></i>Pen size</label>
-        <input
-          type="range"
-          name="pen-size"
-          id="pen-size"
-          value="3"
-          step="2"
-          min="1"
-          max="35"
-          onchange="penSizeChange(this.value)"
-        />
+
+      <div id="pen-tools" class="pen-tools">
+        <div id="drawing-colors" class="drawing-colors">
+          <div
+            class="color-circle active"
+            data-color="black"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="green"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="blue"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="yellow"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="orange"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="grey"
+            onclick="selectColor(this)"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="salmon"
+            onclick="selectColor(this)"
+          ></div>
+        </div>
+        <div id="favContainer">
+          <label for="favcolor">Select color: </label>
+          <input
+            type="color"
+            name="favcolor"
+            id="favcolor"
+            value="#ff0000"
+            onchange="favColor(this)"
+          />
+        </div>
+        <div id="pen-size" class="pen-size">
+          <label for="pen-size" class="contains-icon"
+            ><img
+              class="icon"
+              src="./icons/pen-tool.svg"
+              alt="Pen Tool Icon"
+            />Pen size</label
+          >
+          <input
+            type="range"
+            name="pen-size"
+            id="pen-size"
+            value="3"
+            step="2"
+            min="1"
+            max="35"
+            onchange="penSizeChange(this.value)"
+          />
+        </div>
       </div>
+
+      <div class="board">
+        <canvas width="800px" height="590px"></canvas>
+      </div>
+
+      <br /><br /><br /><br />
+      <p>
+        All props to tommykelly100 and his tutorial:
+        https://youtu.be/8z8cNzQ7uhE?t=3459
+      </p>
     </div>
-
-    <div class="board">
-      <canvas width="800px" height="590px"></canvas>
-    </div>
-
-    <br><br><br><br>
-    <p>All props to tommykelly100 and his tutorial: https://youtu.be/8z8cNzQ7uhE?t=3459</p>
-
     <script src="script.js"></script>
   </body>
 </html>
