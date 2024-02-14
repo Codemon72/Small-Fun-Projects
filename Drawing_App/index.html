@@ -19,15 +19,6 @@
     <div class="main">
       <p>Draw by holding down the mouse button and moving it.</p>
 
-      <a id="download" href="" download="my_drawing.png" class="contains-icon clickable">
-        <img class="icon" src="icons/download.svg" alt="Pen Tool Icon" />
-        <span> Download this drawing</span>
-      </a>
-      <div id="refresh" class="contains-icon clickable">
-        <img class="icon" src="icons/refresh-cw.svg" alt="Pen Tool Icon" />
-        <span>Clear</span>
-      </div>
-
       <div id="pen-tools" class="pen-tools">
         <div id="drawing-colors" class="drawing-colors">
           <div
@@ -101,7 +92,21 @@
         <canvas width="800px" height="590px"></canvas>
       </div>
 
-      <br /><br /><br /><br />
+      <div class="button-container">
+        <a
+          id="download"
+          href=""
+          download="my_drawing.png"
+          class="button contains-icon"
+        >
+          <img class="icon" src="icons/download.svg" alt="Pen Tool Icon" />
+          <span> Download this drawing</span>
+        </a>
+        <div id="refresh" class="button contains-icon">
+          <img class="icon" src="icons/refresh-cw.svg" alt="Pen Tool Icon" />
+          <span>Clear</span>
+        </div>
+      </div>
     </div>
     <footer>
       All props to tommykelly100 and his
@@ -109,6 +114,7 @@
         href="https://youtu.be/8z8cNzQ7uhE?t=3459"
         target="_blank"
         rel="noopener noreferrer"
+        class="highlight"
         >tutorial</a
       >.
     </footer>

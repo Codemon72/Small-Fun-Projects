@@ -29,13 +29,15 @@ body {
 footer {
   margin-top: auto;
   background-color: #000;
-
   color: #fff;
-  padding: 1.5rem;
+  padding: 1rem 2rem;
 }
 a {
   color: inherit; /* Inherit text color from parent */
   text-decoration: none; /* Remove underline by default */
+}
+.highlight {
+  color: var(--attention)
 }
 
 canvas {
@@ -44,19 +46,36 @@ canvas {
   margin: auto;
 }
 
-.clickable {
+.button {
   cursor: pointer;
+  padding: .25em 1.25em;
+  border-radius: 6rem;
+  border: #000 2px solid;
+}
+.button:hover {
+  box-shadow: var(--box-shadow);
+  scale: 1.005;
 }
 .contains-icon {
   display: flex;
+  align-items: center;
 }
 
 .icon {
   width: 1em; /* Set the width to match the size of adjacent text */
   height: 1em; /* Set the height to match the size of adjacent text */
   margin-right: 0.5em; /* Optional: Add some spacing between the icon and text */
-  fill: currentColor; /* Ensure the icon inherits the color of adjacent text */
   font-size: 1em; /* Set the font size to match the size of the icon */
+}
+
+img svg {
+  stroke: currentColor;
+}
+
+.button-container {
+  display: flex;
+  gap: 5rem;
+  margin: 1.5rem 0;
 }
 
 .pen-tools {
