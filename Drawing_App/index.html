@@ -20,7 +20,7 @@
       <p>Draw by holding down the mouse button and moving it.</p>
 
       <div id="pen-tools" class="pen-tools">
-        <div id="drawing-colors" class="drawing-colors">
+        <div id="drawing-colors" class="flex-center">
           <div
             class="color-circle active"
             data-color="black"
@@ -57,7 +57,7 @@
             onclick="selectColor(this)"
           ></div>
         </div>
-        <div id="favContainer">
+        <div>
           <label for="favcolor">Select color: </label>
           <input
             type="color"
@@ -67,14 +67,11 @@
             onchange="favColor(this)"
           />
         </div>
-        <div id="pen-size" class="pen-size">
-          <label for="pen-size" class="contains-icon"
-            ><img
-              class="icon"
-              src="./icons/pen-tool.svg"
-              alt="Pen Tool Icon"
-            />Pen size</label
-          >
+        <div class="flex-center">
+          <label for="pen-size" class="flex-center"
+            ><img class="icon" src="./icons/pen-tool.svg" alt="Pen Tool Icon" />
+            <span>Pen size: </span>
+          </label>
           <input
             type="range"
             name="pen-size"
@@ -97,12 +94,12 @@
           id="download"
           href=""
           download="my_drawing.png"
-          class="button contains-icon"
+          class="button flex-center"
         >
           <img class="icon" src="icons/download.svg" alt="Pen Tool Icon" />
           <span> Download this drawing</span>
         </a>
-        <div id="refresh" class="button contains-icon">
+        <div id="refresh" class="button flex-center">
           <img class="icon" src="icons/refresh-cw.svg" alt="Pen Tool Icon" />
           <span>Clear</span>
         </div>
