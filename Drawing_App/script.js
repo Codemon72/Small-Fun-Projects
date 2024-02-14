@@ -1,6 +1,6 @@
 const colorCircle = document.querySelectorAll('.color-circle')
 
-let penSize = 10
+let penSize = 3
 let isDrawing
 let x
 let y
@@ -12,8 +12,6 @@ canvas.addEventListener('mousedown', (e) => {
   isDrawing = true
   x = e.offsetX
   y = e.offsetY
-
-  console.log(x, y)
 })
 
 canvas.addEventListener('mouseup', () => {
