@@ -17,14 +17,13 @@
   </head>
   <body>
     <div class="main">
-      <h1>Drawing App</h1>
       <p>Draw by holding down the mouse button and moving it.</p>
 
-      <div id="download" download="my_drawing.png" class="contains-icon">
+      <a id="download" href="" download="my_drawing.png" class="contains-icon clickable">
         <img class="icon" src="icons/download.svg" alt="Pen Tool Icon" />
         <span> Download this drawing</span>
-      </div>
-      <div id="refresh" class="contains-icon">
+      </a>
+      <div id="refresh" class="contains-icon clickable">
         <img class="icon" src="icons/refresh-cw.svg" alt="Pen Tool Icon" />
         <span>Clear</span>
       </div>
@@ -103,11 +102,16 @@
       </div>
 
       <br /><br /><br /><br />
-      <p>
-        All props to tommykelly100 and his tutorial:
-        https://youtu.be/8z8cNzQ7uhE?t=3459
-      </p>
     </div>
+    <footer>
+      All props to tommykelly100 and his
+      <a
+        href="https://youtu.be/8z8cNzQ7uhE?t=3459"
+        target="_blank"
+        rel="noopener noreferrer"
+        >tutorial</a
+      >.
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

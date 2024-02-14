@@ -1,12 +1,41 @@
+:root {
+  --base: #008080;
+  --dark: #002425;
+  --attention: #ff8749;
+  --attention-light: rgb(255, 135, 73, 0.2);
+  --warning: #8b1c00;
+  --box-shadow: 6px 12px 24px rgba(0, 0, 0, 0.2);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--base);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
 }
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+  background-color: #000;
+
+  color: #fff;
+  padding: 1.5rem;
+}
+a {
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline by default */
 }
 
 canvas {
@@ -15,13 +44,9 @@ canvas {
   margin: auto;
 }
 
-/* a {
-  display: inline-block;
-  background-color: #69c;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 100px;
-} */
+.clickable {
+  cursor: pointer;
+}
 .contains-icon {
   display: flex;
 }
@@ -42,24 +67,12 @@ canvas {
   margin: auto;
 }
 
-p {
-  text-align: center;
-}
-
-.fa-refresh {
-  margin-left: 10px;
-  background-color: #f00;
-  padding: 5px 10px;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-}
 
 .pen-size {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 16px;
+
   margin-bottom: 5px;
 }
 
