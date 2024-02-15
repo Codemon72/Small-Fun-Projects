@@ -8,6 +8,13 @@ let lastX = 0
 let lastY = 0
 
 // Event handlers
+function handleColorSelection(event) {
+  const colorCircle = event.target.closest('.color-circle');
+  if (colorCircle) {
+    selectColor(colorCircle);
+  }
+}
+
 function handleStart(event) {
   isDrawing = true
   ;[lastX, lastY] = [
@@ -30,6 +37,7 @@ function handleMove(event) {
   ;[lastX, lastY] = [x, y]
 }
 
+// Event listeners
 canvas.addEventListener('mousedown', handleStart)
 canvas.addEventListener('mouseup', handleEnd)
 canvas.addEventListener('mousemove', handleMove)
@@ -42,6 +50,9 @@ canvas.addEventListener('touchmove', (event) => {
   event.preventDefault(); // prevent scrolling
   handleMove(event.touches[0])
 })
+
+// Event delegation for color selection
+document.getElementById('drawing-colors').addEventListener('click', handleColorSelection);
 
 // Drawing functions
 function draw(x1, y1, x2, y2) {
