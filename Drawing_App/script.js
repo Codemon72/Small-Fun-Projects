@@ -39,6 +39,7 @@ canvas.addEventListener('touchstart', (event) => {
 })
 canvas.addEventListener('touchend', handleEnd)
 canvas.addEventListener('touchmove', (event) => {
+  event.preventDefault(); // prevent scrolling
   handleMove(event.touches[0])
 })
 
