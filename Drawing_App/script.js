@@ -1,83 +1,93 @@
-const colorCircle = document.querySelectorAll('.color-circle')
+const colorCircles = document.querySelectorAll('.color-circle')
+const canvas = document.querySelector('canvas')
+const ctx = canvas.getContext('2d')
 
 let penSize = 3
-let isDrawing
-let x
-let y
+let isDrawing = false
+let lastX = 0
+let lastY = 0
 
-var canvas = document.querySelector('canvas')
-c = canvas.getContext('2d')
-
-canvas.addEventListener('mousedown', (e) => {
+// Event handlers
+function handleStart(event) {
   isDrawing = true
-  x = e.offsetX
-  y = e.offsetY
-})
+  ;[lastX, lastY] = [
+    event.clientX - canvas.offsetLeft,
+    event.clientY - canvas.offsetTop
+  ]
+}
 
-canvas.addEventListener('mouseup', () => {
+function handleEnd() {
   isDrawing = false
-  x = undefined
-  y = undefined
+}
+
+function handleMove(event) {
+  if (!isDrawing) return
+  const [x, y] = [
+    event.clientX - canvas.offsetLeft,
+    event.clientY - canvas.offsetTop
+  ]
+  draw(lastX, lastY, x, y)
+  ;[lastX, lastY] = [x, y]
+}
+
+canvas.addEventListener('mousedown', handleStart)
+canvas.addEventListener('mouseup', handleEnd)
+canvas.addEventListener('mousemove', handleMove)
+
+canvas.addEventListener('touchstart', (event) => {
+  handleStart(event.touches[0])
+})
+canvas.addEventListener('touchend', handleEnd)
+canvas.addEventListener('touchmove', (event) => {
+  handleMove(event.touches[0])
 })
 
-canvas.addEventListener('mousemove', (e) => {
-  draw(e.offsetX, e.offsetY)
-})
-
-c.fillStyle = 'black'
-c.strokeStyle = c.fillStyle
-
-function draw(x2, y2) {
-  if (isDrawing) {
-    c.beginPath()
-    c.arc(x2, y2, penSize, 0, Math.PI * 2)
-    c.closePath()
-    c.fill()
-    // draw line
-    drawLine(x, y, x2, y2)
-  }
-  x = x2
-  y = y2
+// Drawing functions
+function draw(x1, y1, x2, y2) {
+  ctx.beginPath()
+  ctx.arc(x2, y2, penSize, 0, Math.PI * 2)
+  ctx.closePath()
+  ctx.fill()
+  drawLine(x1, y1, x2, y2)
 }
 
 function drawLine(x1, y1, x2, y2) {
-  c.beginPath()
-  c.moveTo(x1, y1)
-  c.lineTo(x2, y2)
-  c.strokeStyle = c.fillStyle
-  c.lineWidth = penSize * 2
-  c.stroke()
+  ctx.beginPath()
+  ctx.moveTo(x1, y1)
+  ctx.lineTo(x2, y2)
+  ctx.strokeStyle = ctx.fillStyle
+  ctx.lineWidth = penSize * 2
+  ctx.stroke()
 }
 
-document.getElementById('refresh').addEventListener('click', function () {
-  c.clearRect(0, 0, canvas.width, canvas.height)
-})
-
-const selectColor = (elem) => {
-  removeActiveCircleColor()
-
-  c.fillStyle = elem.getAttribute('data-color')
-  elem.classList.add('active')
-}
-
-const removeActiveCircleColor = () => {
-  colorCircle.forEach((circle) => {
-    circle.classList.remove('active')
-  })
-}
-
+// Other functions
 function penSizeChange(pensize) {
   penSize = pensize
 }
 
-const favColor = (elem) => {
-  removeActiveCircleColor()
-  c.fillStyle = elem.value
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
 }
 
-document
-  .getElementById('download')
-  .addEventListener(
-    'click',
-    (event) => (event.target.href = canvas.toDataURL())
-  )
+function selectColor(elem) {
+  removeActiveCircleColor()
+  ctx.fillStyle = elem.getAttribute('data-color')
+  elem.classList.add('active')
+}
+
+function removeActiveCircleColor() {
+  colorCircles.forEach((circle) => {
+    circle.classList.remove('active')
+  })
+}
+
+function favColor(elem) {
+  removeActiveCircleColor()
+  ctx.fillStyle = elem.value
+}
+
+document.getElementById('refresh').addEventListener('click', clearCanvas)
+
+document.getElementById('download').addEventListener('click', (event) => {
+  event.target.href = canvas.toDataURL()
+})
