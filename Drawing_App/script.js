@@ -9,9 +9,9 @@ let lastY = 0
 
 // Event handlers
 function handleColorSelection(event) {
-  const colorCircle = event.target.closest('.color-circle');
+  const colorCircle = event.target.closest('.color-circle')
   if (colorCircle) {
-    selectColor(colorCircle);
+    selectColor(colorCircle)
   }
 }
 
@@ -47,12 +47,24 @@ canvas.addEventListener('touchstart', (event) => {
 })
 canvas.addEventListener('touchend', handleEnd)
 canvas.addEventListener('touchmove', (event) => {
-  event.preventDefault(); // prevent scrolling
+  event.preventDefault() // prevent scrolling
   handleMove(event.touches[0])
 })
 
 // Event delegation for color selection
-document.getElementById('drawing-colors').addEventListener('click', handleColorSelection);
+document
+  .getElementById('drawing-colors')
+  .addEventListener('click', handleColorSelection)
+
+// Event listener for color input
+document.getElementById('favcolor').addEventListener('input', (event) => {
+  favColor(event.target)
+})
+
+// Event listener for pen size input
+document.getElementById('pen-size').addEventListener('input', (event) => {
+  penSizeChange(event.target.value)
+})
 
 // Drawing functions
 function draw(x1, y1, x2, y2) {
