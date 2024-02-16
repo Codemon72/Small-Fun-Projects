@@ -2,6 +2,11 @@ const colorCircles = document.querySelectorAll('.color-circle')
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
+function resizeCanvas() {
+  canvas.width = canvas.parentElement.clientWidth
+  canvas.height = canvas.parentElement.clientHeight
+}
+
 let penSize = 3
 let isDrawing = false
 let lastX = 0
@@ -16,11 +21,11 @@ function handleColorSelection(event) {
 }
 
 function handleStart(event) {
-  isDrawing = true
-  ;[lastX, lastY] = [
-    event.clientX - canvas.offsetLeft,
-    event.clientY - canvas.offsetTop
-  ]
+  isDrawing = true;
+  [lastX, lastY] = [
+    event.clientX - canvas.offsetX,
+    event.clientY - canvas.offsetY
+  ];
 }
 
 function handleEnd() {
